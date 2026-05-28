@@ -2,10 +2,11 @@ const navGroups = [
     {
         label: 'MANDO',
         items: [
-            { id: 'dashboard', icon: '▣', label: 'Centro de Mando' },
-            { id: 'funnel',    icon: '🔻', label: 'Embudo de Mercado' },
-            { id: 'pipeline',  icon: '⇒', label: 'Pipeline B2B' },
-            { id: 'roadmap',   icon: '◈', label: 'Roadmap 90d' },
+            { id: 'dashboard',       icon: '▣', label: 'Centro de Mando' },
+            { id: 'revenuetracker',  icon: '🎯', label: 'Revenue Tracker', highlight: true, badge: '€500K' },
+            { id: 'funnel',          icon: '🔻', label: 'Embudo de Mercado' },
+            { id: 'pipeline',        icon: '⇒', label: 'Pipeline B2B' },
+            { id: 'roadmap',         icon: '◈', label: 'Roadmap 90d' },
         ],
     },
     {

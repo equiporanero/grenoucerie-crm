@@ -5,13 +5,13 @@ import Pipeline from './components/Pipeline/Pipeline'
 import Funnel from './components/Funnel/Funnel'
 import Contenidos from './components/Contenidos/Contenidos'
 import Francia from './components/Francia/Francia'
-import Espana from './components/Espana/Espana'
+import RRSS from './components/RRSS/RRSS'
+import RevenueTracker from './components/RevenueTracker/RevenueTracker'
 import Petfood from './components/Petfood/Petfood'
 import Stack from './components/Stack/Stack'
 import Prompt from './components/Prompt/Prompt'
 import Roadmap from './components/Roadmap/Roadmap'
 import Conexiones from './components/Conexiones/Conexiones'
-import RRSS from './components/RRSS/RRSS'
 import Chatwoot from './components/Chatwoot/Chatwoot'
 import './index.css'
 
@@ -21,12 +21,13 @@ const VISTAS = {
     pipeline:   Pipeline,
     contenidos: Contenidos,
     roadmap:    Roadmap,
-    espana:     Espana,
+    espana:     Dashboard,
     francia:    Francia,
     petfood:    Petfood,
     conexiones: Conexiones,
-    rrss:       RRSS,
-    stack:      Stack,
+    rrss:            RRSS,
+    revenuetracker: RevenueTracker,
+    stack:           Stack,
     prompt:     Prompt,
     brightbean: RRSS,
     chatwoot:   Chatwoot,
