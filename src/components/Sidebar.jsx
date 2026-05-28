@@ -4,6 +4,7 @@ const navGroups = [
         items: [
             { id: 'dashboard',       icon: '▣', label: 'Centro de Mando' },
             { id: 'revenuetracker',  icon: '🎯', label: 'Revenue Tracker', highlight: true, badge: '€500K' },
+            { id: 'outbound',        icon: '🚀', label: 'Outbound Engine', highlight: true, badge: 'FR' },
             { id: 'funnel',          icon: '🔻', label: 'Embudo de Mercado' },
             { id: 'pipeline',        icon: '⇒', label: 'Pipeline B2B' },
             { id: 'roadmap',         icon: '◈', label: 'Roadmap 90d' },

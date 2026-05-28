@@ -7,6 +7,7 @@ import Contenidos from './components/Contenidos/Contenidos'
 import Francia from './components/Francia/Francia'
 import RRSS from './components/RRSS/RRSS'
 import RevenueTracker from './components/RevenueTracker/RevenueTracker'
+import OutboundEngine from './components/Outbound/OutboundEngine'
 import Petfood from './components/Petfood/Petfood'
 import Stack from './components/Stack/Stack'
 import Prompt from './components/Prompt/Prompt'
@@ -16,21 +17,22 @@ import Chatwoot from './components/Chatwoot/Chatwoot'
 import './index.css'
 
 const VISTAS = {
-    dashboard:  Dashboard,
-    funnel:     Funnel,
-    pipeline:   Pipeline,
-    contenidos: Contenidos,
-    roadmap:    Roadmap,
-    espana:     Dashboard,
-    francia:    Francia,
-    petfood:    Petfood,
-    conexiones: Conexiones,
+    dashboard:       Dashboard,
+    funnel:          Funnel,
+    pipeline:        Pipeline,
+    contenidos:      Contenidos,
+    roadmap:         Roadmap,
+    espana:          Dashboard,
+    francia:         Francia,
+    petfood:         Petfood,
+    conexiones:      Conexiones,
     rrss:            RRSS,
-    revenuetracker: RevenueTracker,
+    revenuetracker:  RevenueTracker,
+    outbound:        OutboundEngine,
     stack:           Stack,
-    prompt:     Prompt,
-    brightbean: RRSS,
-    chatwoot:   Chatwoot,
+    prompt:          Prompt,
+    brightbean:      RRSS,
+    chatwoot:        Chatwoot,
 }
 
 export default function App() {
