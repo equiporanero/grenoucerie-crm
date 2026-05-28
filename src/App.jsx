@@ -8,6 +8,7 @@ import Francia from './components/Francia/Francia'
 import RRSS from './components/RRSS/RRSS'
 import RevenueTracker from './components/RevenueTracker/RevenueTracker'
 import OutboundEngine from './components/Outbound/OutboundEngine'
+import CalculadoraMargenes from './components/Calculadora/CalculadoraMargenes'
 import Petfood from './components/Petfood/Petfood'
 import Stack from './components/Stack/Stack'
 import Prompt from './components/Prompt/Prompt'
@@ -29,6 +30,7 @@ const VISTAS = {
     rrss:            RRSS,
     revenuetracker:  RevenueTracker,
     outbound:        OutboundEngine,
+    calculadora:     CalculadoraMargenes,
     stack:           Stack,
     prompt:          Prompt,
     brightbean:      RRSS,

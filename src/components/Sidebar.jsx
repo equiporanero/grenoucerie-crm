@@ -22,7 +22,8 @@ const navGroups = [
     {
         label: 'HERRAMIENTAS',
         items: [
-            { id: 'rrss',       icon: '📱', label: 'Redes Sociales', badge: 'nuevo' },
+            { id: 'calculadora', icon: '💰', label: 'Calculadora Márgenes' },
+            { id: 'rrss',        icon: '📱', label: 'Redes Sociales', badge: 'nuevo' },
             { id: 'chatwoot',    icon: '💬', label: 'Atención Cliente', badge: 'nuevo' },
         ],
     },
