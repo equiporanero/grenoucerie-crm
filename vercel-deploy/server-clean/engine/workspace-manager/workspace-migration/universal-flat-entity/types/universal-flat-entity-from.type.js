@@ -1,0 +1,6 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+//# sourceMappingURL=universal-flat-entity-from.type.js.map

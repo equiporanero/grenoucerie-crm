@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../src/engine/core-modules/email-verification/email-verification.constants.ts"],"sourcesContent":["export enum EmailVerificationTrigger {\n  SIGN_UP = 'SIGN_UP',\n  EMAIL_UPDATE = 'EMAIL_UPDATE',\n}\n"],"names":["EmailVerificationTrigger"],"mappings":";;;;+BAAYA;;;eAAAA;;;AAAL,IAAA,AAAKA,kDAAAA;;;WAAAA"}

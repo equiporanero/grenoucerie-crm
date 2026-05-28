@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../src/engine/core-modules/twenty-config/enums/config-source.enum.ts"],"sourcesContent":["export enum ConfigSource {\n  ENVIRONMENT = 'ENVIRONMENT',\n  DATABASE = 'DATABASE',\n  DEFAULT = 'DEFAULT',\n}\n"],"names":["ConfigSource"],"mappings":";;;;+BAAYA;;;eAAAA;;;AAAL,IAAA,AAAKA,sCAAAA;;;;WAAAA"}

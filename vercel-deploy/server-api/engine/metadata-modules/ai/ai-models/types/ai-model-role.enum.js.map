@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../../src/engine/metadata-modules/ai/ai-models/types/ai-model-role.enum.ts"],"sourcesContent":["export enum AiModelRole {\n  FAST = 'fast',\n  SMART = 'smart',\n}\n"],"names":["AiModelRole"],"mappings":";;;;+BAAYA;;;eAAAA;;;AAAL,IAAA,AAAKA,qCAAAA;;;WAAAA"}

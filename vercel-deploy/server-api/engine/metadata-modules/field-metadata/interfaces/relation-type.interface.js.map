@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../src/engine/metadata-modules/field-metadata/interfaces/relation-type.interface.ts"],"sourcesContent":["export enum RelationType {\n  ONE_TO_MANY = 'ONE_TO_MANY',\n  MANY_TO_ONE = 'MANY_TO_ONE',\n}\n"],"names":["RelationType"],"mappings":";;;;+BAAYA;;;eAAAA;;;AAAL,IAAA,AAAKA,sCAAAA;;;WAAAA"}

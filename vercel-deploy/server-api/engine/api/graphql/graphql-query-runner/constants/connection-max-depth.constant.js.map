@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../../src/engine/api/graphql/graphql-query-runner/constants/connection-max-depth.constant.ts"],"sourcesContent":["export const CONNECTION_MAX_DEPTH = 5;\n"],"names":["CONNECTION_MAX_DEPTH"],"mappings":";;;;+BAAaA;;;eAAAA;;;AAAN,MAAMA,uBAAuB"}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../src/modules/calendar/calendar-event-import-manager/constants/calendar-throttle-max-attempts.ts"],"sourcesContent":["export const CALENDAR_THROTTLE_MAX_ATTEMPTS = 5;\n"],"names":["CALENDAR_THROTTLE_MAX_ATTEMPTS"],"mappings":";;;;+BAAaA;;;eAAAA;;;AAAN,MAAMA,iCAAiC"}

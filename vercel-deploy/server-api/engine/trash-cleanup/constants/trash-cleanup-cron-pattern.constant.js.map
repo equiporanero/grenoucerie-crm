@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../src/engine/trash-cleanup/constants/trash-cleanup-cron-pattern.constant.ts"],"sourcesContent":["export const TRASH_CLEANUP_CRON_PATTERN = '10 0 * * *';\n"],"names":["TRASH_CLEANUP_CRON_PATTERN"],"mappings":";;;;+BAAaA;;;eAAAA;;;AAAN,MAAMA,6BAA6B"}

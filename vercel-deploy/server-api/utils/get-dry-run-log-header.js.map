@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/utils/get-dry-run-log-header.ts"],"sourcesContent":["export const getDryRunLogHeader = (isDryRun: boolean | undefined): string => {\n  return isDryRun ? 'Dry-run mode: ' : '';\n};\n"],"names":["getDryRunLogHeader","isDryRun"],"mappings":";;;;+BAAaA;;;eAAAA;;;AAAN,MAAMA,qBAAqB,CAACC;IACjC,OAAOA,WAAW,mBAAmB;AACvC"}

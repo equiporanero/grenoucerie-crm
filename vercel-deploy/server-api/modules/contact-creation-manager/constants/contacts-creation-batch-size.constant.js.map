@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../src/modules/contact-creation-manager/constants/contacts-creation-batch-size.constant.ts"],"sourcesContent":["export const CONTACTS_CREATION_BATCH_SIZE = 100;\n"],"names":["CONTACTS_CREATION_BATCH_SIZE"],"mappings":";;;;+BAAaA;;;eAAAA;;;AAAN,MAAMA,+BAA+B"}

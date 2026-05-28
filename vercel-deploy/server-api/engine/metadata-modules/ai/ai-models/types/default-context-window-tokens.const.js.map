@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../../src/engine/metadata-modules/ai/ai-models/types/default-context-window-tokens.const.ts"],"sourcesContent":["export const DEFAULT_CONTEXT_WINDOW_TOKENS = 128_000;\n"],"names":["DEFAULT_CONTEXT_WINDOW_TOKENS"],"mappings":";;;;+BAAaA;;;eAAAA;;;AAAN,MAAMA,gCAAgC"}

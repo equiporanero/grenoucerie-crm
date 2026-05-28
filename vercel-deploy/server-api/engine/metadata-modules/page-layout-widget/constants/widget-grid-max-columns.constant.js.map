@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../src/engine/metadata-modules/page-layout-widget/constants/widget-grid-max-columns.constant.ts"],"sourcesContent":["export const WIDGET_GRID_MAX_COLUMNS = 12;\n"],"names":["WIDGET_GRID_MAX_COLUMNS"],"mappings":";;;;+BAAaA;;;eAAAA;;;AAAN,MAAMA,0BAA0B"}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../src/modules/dashboard/chart-data/constants/pie-chart-maximum-number-of-slices.constant.ts"],"sourcesContent":["export const PIE_CHART_MAXIMUM_NUMBER_OF_SLICES = 100;\n"],"names":["PIE_CHART_MAXIMUM_NUMBER_OF_SLICES"],"mappings":";;;;+BAAaA;;;eAAAA;;;AAAN,MAAMA,qCAAqC"}

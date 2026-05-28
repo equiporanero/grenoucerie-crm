@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../src/engine/core-modules/message-queue/utils/get-queue-token.util.ts"],"sourcesContent":["export const getQueueToken = (queueName: string) =>\n  `MESSAGE_QUEUE_${queueName}`;\n"],"names":["getQueueToken","queueName"],"mappings":";;;;+BAAaA;;;eAAAA;;;AAAN,MAAMA,gBAAgB,CAACC,YAC5B,CAAC,cAAc,EAAEA,WAAW"}

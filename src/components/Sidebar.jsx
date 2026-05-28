@@ -20,8 +20,8 @@ const navGroups = [
     {
         label: 'HERRAMIENTAS',
         items: [
-            { id: 'brightbean', icon: '📱', label: 'Redes Sociales', badge: 'nuevo' },
-            { id: 'chatwoot',   icon: '💬', label: 'Atención Cliente', badge: 'nuevo' },
+            { id: 'rrss',       icon: '📱', label: 'Redes Sociales', badge: 'nuevo' },
+            { id: 'chatwoot',    icon: '💬', label: 'Atención Cliente', badge: 'nuevo' },
         ],
     },
     {

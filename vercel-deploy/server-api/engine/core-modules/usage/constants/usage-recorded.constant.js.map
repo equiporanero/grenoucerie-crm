@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../src/engine/core-modules/usage/constants/usage-recorded.constant.ts"],"sourcesContent":["/* @license Enterprise */\n\nexport const USAGE_RECORDED = 'USAGE_RECORDED';\n"],"names":["USAGE_RECORDED"],"mappings":"AAAA,uBAAuB;;;;+BAEVA;;;eAAAA;;;AAAN,MAAMA,iBAAiB"}

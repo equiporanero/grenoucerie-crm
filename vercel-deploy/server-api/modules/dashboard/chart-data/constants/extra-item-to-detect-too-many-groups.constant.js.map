@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../src/modules/dashboard/chart-data/constants/extra-item-to-detect-too-many-groups.constant.ts"],"sourcesContent":["export const EXTRA_ITEM_TO_DETECT_TOO_MANY_GROUPS = 1;\n"],"names":["EXTRA_ITEM_TO_DETECT_TOO_MANY_GROUPS"],"mappings":";;;;+BAAaA;;;eAAAA;;;AAAN,MAAMA,uCAAuC"}

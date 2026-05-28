@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../../src/engine/api/graphql/graphql-config/constants/resolver-schema-scope-key.constant.ts"],"sourcesContent":["export const RESOLVER_SCHEMA_SCOPE_KEY = 'RESOLVER_SCHEMA_SCOPE';\n"],"names":["RESOLVER_SCHEMA_SCOPE_KEY"],"mappings":";;;;+BAAaA;;;eAAAA;;;AAAN,MAAMA,4BAA4B"}

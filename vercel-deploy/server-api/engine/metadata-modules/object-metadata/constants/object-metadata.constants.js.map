@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../src/engine/metadata-modules/object-metadata/constants/object-metadata.constants.ts"],"sourcesContent":["export const DEFAULT_LABEL_IDENTIFIER_FIELD_NAME = 'name';\n"],"names":["DEFAULT_LABEL_IDENTIFIER_FIELD_NAME"],"mappings":";;;;+BAAaA;;;eAAAA;;;AAAN,MAAMA,sCAAsC"}

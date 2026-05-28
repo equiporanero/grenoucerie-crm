@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../../src/engine/api/common/common-query-runners/errors/standard-error-message.constant.ts"],"sourcesContent":["import { msg } from '@lingui/core/macro';\n\nexport const STANDARD_ERROR_MESSAGE = msg`An error occurred.`;\n"],"names":["STANDARD_ERROR_MESSAGE","msg"],"mappings":";;;;+BAEaA;;;eAAAA;;;AAAN,MAAMA,kCAAyBC;;;AAAsB"}

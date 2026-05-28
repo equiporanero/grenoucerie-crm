@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../../../src/engine/core-modules/emailing-domain/drivers/aws-ses/constants/aws-ses-mail-from-subdomain.constant.ts"],"sourcesContent":["export const AWS_SES_MAIL_FROM_SUBDOMAIN = 'bounce';\n"],"names":["AWS_SES_MAIL_FROM_SUBDOMAIN"],"mappings":";;;;+BAAaA;;;eAAAA;;;AAAN,MAAMA,8BAA8B"}

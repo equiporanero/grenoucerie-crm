@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../src/engine/workspace-manager/workspace-migration/types/entity-relation.interface.ts"],"sourcesContent":["/**\n * Wrapper type used to circumvent ESM modules circular dependency issue\n * caused by reflection metadata saving the type of the property.\n */\nexport type EntityRelation<T> = T;\n"],"names":[],"mappings":"AAAA;;;CAGC"}

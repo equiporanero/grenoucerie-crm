@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../src/modules/calendar/calendar-event-import-manager/constants/calendar-import-ongoing-sync-timeout.constant.ts"],"sourcesContent":["export const CALENDAR_IMPORT_ONGOING_SYNC_TIMEOUT = 1000 * 60 * 30; // 30 minutes\n"],"names":["CALENDAR_IMPORT_ONGOING_SYNC_TIMEOUT"],"mappings":";;;;+BAAaA;;;eAAAA;;;AAAN,MAAMA,uCAAuC,OAAO,KAAK,IAAI,aAAa"}

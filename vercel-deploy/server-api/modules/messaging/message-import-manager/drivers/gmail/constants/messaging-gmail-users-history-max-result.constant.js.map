@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../../../src/modules/messaging/message-import-manager/drivers/gmail/constants/messaging-gmail-users-history-max-result.constant.ts"],"sourcesContent":["export const MESSAGING_GMAIL_USERS_HISTORY_MAX_RESULT = 500;\n"],"names":["MESSAGING_GMAIL_USERS_HISTORY_MAX_RESULT"],"mappings":";;;;+BAAaA;;;eAAAA;;;AAAN,MAAMA,2CAA2C"}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../src/engine/core-modules/billing/enums/billing-meter-status.enum.ts"],"sourcesContent":["/* @license Enterprise */\n\nexport enum BillingMeterStatus {\n  ACTIVE = 'ACTIVE',\n  INACTIVE = 'INACTIVE',\n}\n"],"names":["BillingMeterStatus"],"mappings":"AAAA,uBAAuB;;;;+BAEXA;;;eAAAA;;;AAAL,IAAA,AAAKA,4CAAAA;;;WAAAA"}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../../src/modules/workflow/workflow-runner/workflow-run-queue/constants/number-of-workflow-runs-to-keep.ts"],"sourcesContent":["export const NUMBER_OF_WORKFLOW_RUNS_TO_KEEP = 1000;\n"],"names":["NUMBER_OF_WORKFLOW_RUNS_TO_KEEP"],"mappings":";;;;+BAAaA;;;eAAAA;;;AAAN,MAAMA,kCAAkC"}

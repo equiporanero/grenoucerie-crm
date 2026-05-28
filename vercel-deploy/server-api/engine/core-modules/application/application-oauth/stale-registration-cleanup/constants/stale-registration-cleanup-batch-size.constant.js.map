@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../../../src/engine/core-modules/application/application-oauth/stale-registration-cleanup/constants/stale-registration-cleanup-batch-size.constant.ts"],"sourcesContent":["export const STALE_REGISTRATION_CLEANUP_BATCH_SIZE = 100;\n"],"names":["STALE_REGISTRATION_CLEANUP_BATCH_SIZE"],"mappings":";;;;+BAAaA;;;eAAAA;;;AAAN,MAAMA,wCAAwC"}

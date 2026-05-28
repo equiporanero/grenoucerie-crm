@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../src/engine/trash-cleanup/constants/trash-cleanup-max-records-per-workspace.constant.ts"],"sourcesContent":["export const TRASH_CLEANUP_MAX_RECORDS_PER_WORKSPACE = 1_000_000;\n"],"names":["TRASH_CLEANUP_MAX_RECORDS_PER_WORKSPACE"],"mappings":";;;;+BAAaA;;;eAAAA;;;AAAN,MAAMA,0CAA0C"}

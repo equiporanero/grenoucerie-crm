@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../src/engine/core-modules/twenty-config/interfaces/node-environment.interface.ts"],"sourcesContent":["export enum NodeEnvironment {\n  TEST = 'test',\n  DEVELOPMENT = 'development',\n  PRODUCTION = 'production',\n}\n"],"names":["NodeEnvironment"],"mappings":";;;;+BAAYA;;;eAAAA;;;AAAL,IAAA,AAAKA,yCAAAA;;;;WAAAA"}

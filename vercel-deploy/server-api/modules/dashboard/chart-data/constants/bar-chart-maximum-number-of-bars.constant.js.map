@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../src/modules/dashboard/chart-data/constants/bar-chart-maximum-number-of-bars.constant.ts"],"sourcesContent":["export const BAR_CHART_MAXIMUM_NUMBER_OF_BARS = 100;\n"],"names":["BAR_CHART_MAXIMUM_NUMBER_OF_BARS"],"mappings":";;;;+BAAaA;;;eAAAA;;;AAAN,MAAMA,mCAAmC"}

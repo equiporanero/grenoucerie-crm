@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../src/engine/core-modules/billing/enums/billing-available-product.enum.ts"],"sourcesContent":["/* @license Enterprise */\n\nexport enum AvailableProduct {\n  BasePlan = 'base-plan',\n}\n"],"names":["AvailableProduct"],"mappings":"AAAA,uBAAuB;;;;+BAEXA;;;eAAAA;;;AAAL,IAAA,AAAKA,0CAAAA;;WAAAA"}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../src/engine/workspace-manager/workspace-cleaner/crons/clean-suspended-workspaces.cron.pattern.ts"],"sourcesContent":["export const cleanSuspendedWorkspaceCronPattern = '0 * * * *'; // Every hour at minute 0\n"],"names":["cleanSuspendedWorkspaceCronPattern"],"mappings":";;;;+BAAaA;;;eAAAA;;;AAAN,MAAMA,qCAAqC,aAAa,yBAAyB"}

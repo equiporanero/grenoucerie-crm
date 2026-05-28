@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../src/engine/core-modules/billing/types/billing-subscription-item-metadata.type.ts"],"sourcesContent":["/* @license Enterprise */\n\nexport type BillingSubscriptionItemMetadata =\n  | {\n      trialPeriodFreeWorkflowCredits: number;\n    }\n  | Record<string, never>;\n"],"names":[],"mappings":"AAAA,uBAAuB"}

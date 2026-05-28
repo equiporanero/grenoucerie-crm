@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../src/engine/core-modules/search/utils/escape-for-ilike.ts"],"sourcesContent":["export const escapeForIlike = (value: string): string =>\n  value.replace(/[\\\\%_]/g, '\\\\$&');\n"],"names":["escapeForIlike","value","replace"],"mappings":";;;;+BAAaA;;;eAAAA;;;AAAN,MAAMA,iBAAiB,CAACC,QAC7BA,MAAMC,OAAO,CAAC,WAAW"}

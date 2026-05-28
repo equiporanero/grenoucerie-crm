@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../src/engine/core-modules/email/enums/email-driver.enum.ts"],"sourcesContent":["export enum EmailDriver {\n  LOGGER = 'LOGGER',\n  SMTP = 'SMTP',\n}\n"],"names":["EmailDriver"],"mappings":";;;;+BAAYA;;;eAAAA;;;AAAL,IAAA,AAAKA,qCAAAA;;;WAAAA"}

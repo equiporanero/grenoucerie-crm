@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../../src/engine/metadata-modules/ai/ai-models/types/model-id.type.ts"],"sourcesContent":["// Composite workspace model identifier, usually `provider/modelName` (see `buildCompositeModelId`).\nexport type ModelId = string;\n"],"names":[],"mappings":"AAAA,oGAAoG"}

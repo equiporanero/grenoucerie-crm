@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../src/engine/core-modules/auth/constants/max-workspaces-without-enterprise-key.constants.ts"],"sourcesContent":["export const MAX_WORKSPACES_WITHOUT_ENTERPRISE_KEY = 5;\n"],"names":["MAX_WORKSPACES_WITHOUT_ENTERPRISE_KEY"],"mappings":";;;;+BAAaA;;;eAAAA;;;AAAN,MAAMA,wCAAwC"}

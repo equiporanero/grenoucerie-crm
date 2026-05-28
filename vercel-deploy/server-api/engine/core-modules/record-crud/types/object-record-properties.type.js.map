@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../src/engine/core-modules/record-crud/types/object-record-properties.type.ts"],"sourcesContent":["// oxlint-disable-next-line @typescripttypescript/no-explicit-any\nexport type ObjectRecordProperties = Record<string, any>;\n"],"names":[],"mappings":"AAAA,iEAAiE"}

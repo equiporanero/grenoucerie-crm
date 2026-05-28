@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../src/engine/twenty-orm/base.workspace-entity.ts"],"sourcesContent":["export abstract class BaseWorkspaceEntity {\n  id: string;\n  createdAt: string;\n  updatedAt: string;\n  deletedAt: string | null;\n}\n"],"names":["BaseWorkspaceEntity"],"mappings":";;;;+BAAsBA;;;eAAAA;;;AAAf,IAAA,AAAeA,sBAAf,MAAeA;AAKtB"}

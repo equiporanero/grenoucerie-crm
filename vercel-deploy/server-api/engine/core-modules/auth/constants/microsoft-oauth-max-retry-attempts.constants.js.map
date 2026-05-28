@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../src/engine/core-modules/auth/constants/microsoft-oauth-max-retry-attempts.constants.ts"],"sourcesContent":["export const MICROSOFT_OAUTH_MAX_RETRY_ATTEMPTS = 1;\n"],"names":["MICROSOFT_OAUTH_MAX_RETRY_ATTEMPTS"],"mappings":";;;;+BAAaA;;;eAAAA;;;AAAN,MAAMA,qCAAqC"}

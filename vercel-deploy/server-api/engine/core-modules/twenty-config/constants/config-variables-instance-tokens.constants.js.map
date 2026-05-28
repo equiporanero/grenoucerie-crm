@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../src/engine/core-modules/twenty-config/constants/config-variables-instance-tokens.constants.ts"],"sourcesContent":["export const CONFIG_VARIABLES_INSTANCE_TOKEN = Symbol(\n  'CONFIG_VARIABLES_INSTANCE_TOKEN',\n);\n"],"names":["CONFIG_VARIABLES_INSTANCE_TOKEN","Symbol"],"mappings":";;;;+BAAaA;;;eAAAA;;;AAAN,MAAMA,kCAAkCC,OAC7C"}

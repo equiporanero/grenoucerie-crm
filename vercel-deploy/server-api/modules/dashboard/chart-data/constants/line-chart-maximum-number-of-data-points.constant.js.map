@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../src/modules/dashboard/chart-data/constants/line-chart-maximum-number-of-data-points.constant.ts"],"sourcesContent":["export const LINE_CHART_MAXIMUM_NUMBER_OF_DATA_POINTS = 100;\n"],"names":["LINE_CHART_MAXIMUM_NUMBER_OF_DATA_POINTS"],"mappings":";;;;+BAAaA;;;eAAAA;;;AAAN,MAAMA,2CAA2C"}

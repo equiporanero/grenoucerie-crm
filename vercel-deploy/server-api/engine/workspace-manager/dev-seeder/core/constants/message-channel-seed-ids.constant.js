@@ -1,0 +1,20 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+Object.defineProperty(exports, "MESSAGE_CHANNEL_DATA_SEED_IDS", {
+    enumerable: true,
+    get: function() {
+        return MESSAGE_CHANNEL_DATA_SEED_IDS;
+    }
+});
+const MESSAGE_CHANNEL_DATA_SEED_IDS = {
+    TIM: '20202020-9b80-4c2c-a597-383db48de1d6',
+    JONY: '20202020-5ffe-4b32-814a-983d5e4911cd',
+    PHIL: '20202020-e2f1-49b5-85d2-5d3a3386990c',
+    JANE: '20202020-8c4d-4e71-a672-2e6a8c9f1b3d',
+    SUPPORT: '20202020-e2f1-49b5-85d2-5d3a3386990d',
+    SALES: '20202020-e2f1-49b5-85d2-5d3a3386990e'
+};
+
+//# sourceMappingURL=message-channel-seed-ids.constant.js.map

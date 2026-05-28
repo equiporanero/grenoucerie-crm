@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../../../src/engine/core-modules/emailing-domain/drivers/aws-ses/constants/aws-ses-event-bus-name.constant.ts"],"sourcesContent":["export const AWS_SES_EVENT_BUS_NAME = 'default';\n"],"names":["AWS_SES_EVENT_BUS_NAME"],"mappings":";;;;+BAAaA;;;eAAAA;;;AAAN,MAAMA,yBAAyB"}

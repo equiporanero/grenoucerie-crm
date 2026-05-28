@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../src/engine/metadata-modules/flat-view-field/constants/default-view-field-size.constant.ts"],"sourcesContent":["export const DEFAULT_VIEW_FIELD_SIZE = 180;\n"],"names":["DEFAULT_VIEW_FIELD_SIZE"],"mappings":";;;;+BAAaA;;;eAAAA;;;AAAN,MAAMA,0BAA0B"}

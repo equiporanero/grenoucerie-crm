@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../src/engine/metadata-modules/view/types/view-open-record-in-type.type.ts"],"sourcesContent":["export enum ViewOpenRecordInType {\n  SIDE_PANEL = 'SIDE_PANEL',\n  RECORD_PAGE = 'RECORD_PAGE',\n}\n"],"names":["ViewOpenRecordInType"],"mappings":";;;;+BAAYA;;;eAAAA;;;AAAL,IAAA,AAAKA,8CAAAA;;;WAAAA"}

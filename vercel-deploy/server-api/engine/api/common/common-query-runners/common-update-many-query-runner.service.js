@@ -1,0 +1,105 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+Object.defineProperty(exports, "CommonUpdateManyQueryRunnerService", {
+    enumerable: true,
+    get: function() {
+        return CommonUpdateManyQueryRunnerService;
+    }
+});
+const _common = require("@nestjs/common");
+const _classvalidator = require("class-validator");
+const _constants = require("twenty-shared/constants");
+const _commonbasequeryrunnerservice = require("./common-base-query-runner.service");
+const _commonqueryrunnerexception = require("./errors/common-query-runner.exception");
+const _standarderrormessageconstant = require("./errors/standard-error-message.constant");
+const _buildmutationquerybuilderutil = require("./utils/build-mutation-query-builder.util");
+const _commonqueryargstype = require("../types/common-query-args.type");
+const _buildcolumnstoreturn = require("../../graphql/graphql-query-runner/utils/build-columns-to-return");
+const _assertisvaliduuidutil = require("../../graphql/workspace-query-runner/utils/assert-is-valid-uuid.util");
+const _assertmutationnotonremoteobjectutil = require("../../../metadata-modules/object-metadata/utils/assert-mutation-not-on-remote-object.util");
+function _ts_decorate(decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for(var i = decorators.length - 1; i >= 0; i--)if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+}
+let CommonUpdateManyQueryRunnerService = class CommonUpdateManyQueryRunnerService extends _commonbasequeryrunnerservice.CommonBaseQueryRunnerService {
+    async run(args, queryRunnerContext) {
+        const { repository, authContext, rolePermissionConfig, workspaceDataSource, flatObjectMetadataMaps, flatFieldMetadataMaps, flatObjectMetadata, commonQueryParser } = queryRunnerContext;
+        const queryBuilder = (0, _buildmutationquerybuilderutil.buildMutationQueryBuilder)({
+            repository,
+            alias: flatObjectMetadata.nameSingular,
+            filter: args.filter,
+            commonQueryParser
+        });
+        const columnsToReturn = (0, _buildcolumnstoreturn.buildColumnsToReturn)({
+            select: args.selectedFieldsResult.select,
+            relations: args.selectedFieldsResult.relations,
+            flatObjectMetadata,
+            flatObjectMetadataMaps,
+            flatFieldMetadataMaps
+        });
+        const updatedObjectRecords = await queryBuilder.update().set(args.data).returning(columnsToReturn).execute();
+        const updatedRecords = updatedObjectRecords.generatedMaps;
+        if ((0, _classvalidator.isDefined)(args.selectedFieldsResult.relations)) {
+            await this.processNestedRelationsHelper.processNestedRelations({
+                flatObjectMetadataMaps,
+                flatFieldMetadataMaps,
+                parentObjectMetadataItem: flatObjectMetadata,
+                parentObjectRecords: updatedRecords,
+                relations: args.selectedFieldsResult.relations,
+                limit: _constants.QUERY_MAX_RECORDS_FROM_RELATION,
+                authContext,
+                workspaceDataSource,
+                rolePermissionConfig,
+                selectedFields: args.selectedFieldsResult.select
+            });
+        }
+        return updatedRecords;
+    }
+    async computeArgs(args, queryRunnerContext) {
+        const { authContext, flatObjectMetadata, flatFieldMetadataMaps, flatObjectMetadataMaps } = queryRunnerContext;
+        return {
+            ...args,
+            filter: this.filterArgProcessor.process({
+                filter: args.filter,
+                flatObjectMetadata,
+                flatObjectMetadataMaps,
+                flatFieldMetadataMaps
+            }),
+            data: (await this.dataArgProcessor.process({
+                partialRecordInputs: [
+                    args.data
+                ],
+                authContext,
+                flatObjectMetadata,
+                flatFieldMetadataMaps,
+                flatObjectMetadataMaps,
+                shouldBackfillPositionIfUndefined: false
+            }))[0]
+        };
+    }
+    async validate(args, queryRunnerContext) {
+        const { flatObjectMetadata } = queryRunnerContext;
+        (0, _assertmutationnotonremoteobjectutil.assertMutationNotOnRemoteObject)(flatObjectMetadata);
+        if (!args.filter) {
+            throw new _commonqueryrunnerexception.CommonQueryRunnerException('Filter is required', _commonqueryrunnerexception.CommonQueryRunnerExceptionCode.INVALID_QUERY_INPUT, {
+                userFriendlyMessage: _standarderrormessageconstant.STANDARD_ERROR_MESSAGE
+            });
+        }
+        args.filter.id?.in?.forEach((id)=>(0, _assertisvaliduuidutil.assertIsValidUuid)(id));
+    }
+    async processQueryResult(queryResult, flatObjectMetadata, flatObjectMetadataMaps, flatFieldMetadataMaps, authContext) {
+        return await this.commonResultGettersService.processRecordArray(queryResult, flatObjectMetadata, flatObjectMetadataMaps, flatFieldMetadataMaps, authContext.workspace.id);
+    }
+    constructor(...args){
+        super(...args), this.operationName = _commonqueryargstype.CommonQueryNames.UPDATE_MANY;
+    }
+};
+CommonUpdateManyQueryRunnerService = _ts_decorate([
+    (0, _common.Injectable)()
+], CommonUpdateManyQueryRunnerService);
+
+//# sourceMappingURL=common-update-many-query-runner.service.js.map

@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../../../src/engine/core-modules/application/application-marketplace/crons/constants/marketplace-catalog-sync-cron-pattern.constant.ts"],"sourcesContent":["export const MARKETPLACE_CATALOG_SYNC_CRON_PATTERN = '0 * * * *';\n"],"names":["MARKETPLACE_CATALOG_SYNC_CRON_PATTERN"],"mappings":";;;;+BAAaA;;;eAAAA;;;AAAN,MAAMA,wCAAwC"}

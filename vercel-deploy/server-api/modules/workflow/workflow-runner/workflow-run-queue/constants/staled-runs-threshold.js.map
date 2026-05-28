@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../../src/modules/workflow/workflow-runner/workflow-run-queue/constants/staled-runs-threshold.ts"],"sourcesContent":["export const STALED_RUNS_THRESHOLD_MS = 60 * 60 * 1000; // 1 hour\n"],"names":["STALED_RUNS_THRESHOLD_MS"],"mappings":";;;;+BAAaA;;;eAAAA;;;AAAN,MAAMA,2BAA2B,KAAK,KAAK,MAAM,SAAS"}

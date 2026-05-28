@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../../src/modules/messaging/message-import-manager/drivers/types/standard-folder.ts"],"sourcesContent":["export enum StandardFolder {\n  INBOX = 'inbox',\n  DRAFTS = 'drafts',\n  SENT = 'sent',\n  TRASH = 'trash',\n  JUNK = 'junk',\n}\n"],"names":["StandardFolder"],"mappings":";;;;+BAAYA;;;eAAAA;;;AAAL,IAAA,AAAKA,wCAAAA;;;;;;WAAAA"}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../../../src/modules/messaging/message-import-manager/drivers/inbound-email/constants/inbound-email-local-part-random-bytes.constant.ts"],"sourcesContent":["export const INBOUND_EMAIL_LOCAL_PART_RANDOM_BYTES = 6;\n"],"names":["INBOUND_EMAIL_LOCAL_PART_RANDOM_BYTES"],"mappings":";;;;+BAAaA;;;eAAAA;;;AAAN,MAAMA,wCAAwC"}

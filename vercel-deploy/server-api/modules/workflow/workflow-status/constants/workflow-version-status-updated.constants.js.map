@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../src/modules/workflow/workflow-status/constants/workflow-version-status-updated.constants.ts"],"sourcesContent":["export const WORKFLOW_VERSION_STATUS_UPDATED =\n  'workflow_version_status_updated';\n"],"names":["WORKFLOW_VERSION_STATUS_UPDATED"],"mappings":";;;;+BAAaA;;;eAAAA;;;AAAN,MAAMA,kCACX"}

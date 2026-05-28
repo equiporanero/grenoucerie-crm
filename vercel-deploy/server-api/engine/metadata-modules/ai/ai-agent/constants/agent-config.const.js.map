@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../../src/engine/metadata-modules/ai/ai-agent/constants/agent-config.const.ts"],"sourcesContent":["export const AGENT_CONFIG = {\n  MAX_STEPS: 300,\n  REASONING_BUDGET_TOKENS: 12000,\n};\n"],"names":["AGENT_CONFIG","MAX_STEPS","REASONING_BUDGET_TOKENS"],"mappings":";;;;+BAAaA;;;eAAAA;;;AAAN,MAAMA,eAAe;IAC1BC,WAAW;IACXC,yBAAyB;AAC3B"}

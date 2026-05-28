@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../src/engine/metadata-modules/utils/constants/identifier-min-char-length.constants.ts"],"sourcesContent":["export const IDENTIFIER_MIN_CHAR_LENGTH = 1;\n"],"names":["IDENTIFIER_MIN_CHAR_LENGTH"],"mappings":";;;;+BAAaA;;;eAAAA;;;AAAN,MAAMA,6BAA6B"}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../src/engine/core-modules/twenty-config/constants/config-variables-refresh-cron-interval.constants.ts"],"sourcesContent":["export const CONFIG_VARIABLES_REFRESH_CRON_INTERVAL = '*/15 * * * * *';\n"],"names":["CONFIG_VARIABLES_REFRESH_CRON_INTERVAL"],"mappings":";;;;+BAAaA;;;eAAAA;;;AAAN,MAAMA,yCAAyC"}

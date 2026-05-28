@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../src/engine/core-modules/cache-storage/types/cache-storage-type.enum.ts"],"sourcesContent":["export enum CacheStorageType {\n  Memory = 'memory',\n  Redis = 'redis',\n}\n"],"names":["CacheStorageType"],"mappings":";;;;+BAAYA;;;eAAAA;;;AAAL,IAAA,AAAKA,0CAAAA;;;WAAAA"}

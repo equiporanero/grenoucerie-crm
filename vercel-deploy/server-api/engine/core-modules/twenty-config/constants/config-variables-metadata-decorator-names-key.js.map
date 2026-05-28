@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../src/engine/core-modules/twenty-config/constants/config-variables-metadata-decorator-names-key.ts"],"sourcesContent":["export const CONFIG_VARIABLES_METADATA_DECORATOR_NAMES_KEY =\n  'config-variable-names' as const;\n"],"names":["CONFIG_VARIABLES_METADATA_DECORATOR_NAMES_KEY"],"mappings":";;;;+BAAaA;;;eAAAA;;;AAAN,MAAMA,gDACX"}

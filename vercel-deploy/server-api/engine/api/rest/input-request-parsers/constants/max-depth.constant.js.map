@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../../src/engine/api/rest/input-request-parsers/constants/max-depth.constant.ts"],"sourcesContent":["export const MAX_DEPTH = 2;\n"],"names":["MAX_DEPTH"],"mappings":";;;;+BAAaA;;;eAAAA;;;AAAN,MAAMA,YAAY"}

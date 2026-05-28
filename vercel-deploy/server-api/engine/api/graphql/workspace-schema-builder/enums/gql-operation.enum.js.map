@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../../src/engine/api/graphql/workspace-schema-builder/enums/gql-operation.enum.ts"],"sourcesContent":["export enum GqlOperation {\n  Query = 'Query',\n  Mutation = 'Mutation',\n  Subscription = 'Subscription',\n}\n"],"names":["GqlOperation"],"mappings":";;;;+BAAYA;;;eAAAA;;;AAAL,IAAA,AAAKA,sCAAAA;;;;WAAAA"}

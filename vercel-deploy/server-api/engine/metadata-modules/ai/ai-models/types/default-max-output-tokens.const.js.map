@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../../src/engine/metadata-modules/ai/ai-models/types/default-max-output-tokens.const.ts"],"sourcesContent":["export const DEFAULT_MAX_OUTPUT_TOKENS = 4_096;\n"],"names":["DEFAULT_MAX_OUTPUT_TOKENS"],"mappings":";;;;+BAAaA;;;eAAAA;;;AAAN,MAAMA,4BAA4B"}

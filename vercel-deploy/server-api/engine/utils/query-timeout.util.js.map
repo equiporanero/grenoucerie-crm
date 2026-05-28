@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../src/engine/utils/query-timeout.util.ts"],"sourcesContent":["export const isQueryTimeoutError = (error: Error) => {\n  return error.message.includes('Query read timeout');\n};\n"],"names":["isQueryTimeoutError","error","message","includes"],"mappings":";;;;+BAAaA;;;eAAAA;;;AAAN,MAAMA,sBAAsB,CAACC;IAClC,OAAOA,MAAMC,OAAO,CAACC,QAAQ,CAAC;AAChC"}

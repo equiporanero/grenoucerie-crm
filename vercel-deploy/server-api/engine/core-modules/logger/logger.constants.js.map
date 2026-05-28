@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../src/engine/core-modules/logger/logger.constants.ts"],"sourcesContent":["export const LOGGER_DRIVER = Symbol('LOGGER_DRIVER');\n"],"names":["LOGGER_DRIVER","Symbol"],"mappings":";;;;+BAAaA;;;eAAAA;;;AAAN,MAAMA,gBAAgBC,OAAO"}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../src/modules/messaging/common/enums/message-direction.enum.ts"],"sourcesContent":["export enum MessageDirection {\n  INCOMING = 'INCOMING',\n  OUTGOING = 'OUTGOING',\n}\n"],"names":["MessageDirection"],"mappings":";;;;+BAAYA;;;eAAAA;;;AAAL,IAAA,AAAKA,0CAAAA;;;WAAAA"}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../src/modules/messaging/message-import-manager/constants/messaging-throttle-max-attempts.ts"],"sourcesContent":["export const MESSAGING_THROTTLE_MAX_ATTEMPTS = 5;\n"],"names":["MESSAGING_THROTTLE_MAX_ATTEMPTS"],"mappings":";;;;+BAAaA;;;eAAAA;;;AAAN,MAAMA,kCAAkC"}

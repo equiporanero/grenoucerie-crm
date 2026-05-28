@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../src/engine/metadata-modules/permissions/constants/member-role-label.constants.ts"],"sourcesContent":["export const MEMBER_ROLE_LABEL = 'Member';\n"],"names":["MEMBER_ROLE_LABEL"],"mappings":";;;;+BAAaA;;;eAAAA;;;AAAN,MAAMA,oBAAoB"}

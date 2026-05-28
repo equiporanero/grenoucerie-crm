@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../../src/engine/core-modules/event-logs/cleanup/constants/event-log-cleanup-cron-pattern.constant.ts"],"sourcesContent":["// Run daily at 3 AM UTC\nexport const EVENT_LOG_CLEANUP_CRON_PATTERN = '0 3 * * *';\n"],"names":["EVENT_LOG_CLEANUP_CRON_PATTERN"],"mappings":"AAAA,wBAAwB;;;;;+BACXA;;;eAAAA;;;AAAN,MAAMA,iCAAiC"}

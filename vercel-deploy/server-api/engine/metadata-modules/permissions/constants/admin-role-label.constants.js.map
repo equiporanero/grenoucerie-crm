@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../src/engine/metadata-modules/permissions/constants/admin-role-label.constants.ts"],"sourcesContent":["export const ADMIN_ROLE_LABEL = 'Admin';\n"],"names":["ADMIN_ROLE_LABEL"],"mappings":";;;;+BAAaA;;;eAAAA;;;AAAN,MAAMA,mBAAmB"}

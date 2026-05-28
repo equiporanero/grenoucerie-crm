@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../src/engine/core-modules/billing/enums/billing-subscription-interval.enum.ts"],"sourcesContent":["/* @license Enterprise */\n\nexport enum SubscriptionInterval {\n  Month = 'month',\n  Year = 'year',\n}\n"],"names":["SubscriptionInterval"],"mappings":"AAAA,uBAAuB;;;;+BAEXA;;;eAAAA;;;AAAL,IAAA,AAAKA,8CAAAA;;;WAAAA"}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../src/engine/core-modules/admin-panel/constants/metrics-failure-rate-threshold.const.ts"],"sourcesContent":["export const METRICS_FAILURE_RATE_THRESHOLD = 20;\n"],"names":["METRICS_FAILURE_RATE_THRESHOLD"],"mappings":";;;;+BAAaA;;;eAAAA;;;AAAN,MAAMA,iCAAiC"}

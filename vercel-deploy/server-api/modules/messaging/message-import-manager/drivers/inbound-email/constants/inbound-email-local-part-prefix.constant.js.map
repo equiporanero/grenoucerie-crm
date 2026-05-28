@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../../../src/modules/messaging/message-import-manager/drivers/inbound-email/constants/inbound-email-local-part-prefix.constant.ts"],"sourcesContent":["export const INBOUND_EMAIL_LOCAL_PART_PREFIX = 'ch_';\n"],"names":["INBOUND_EMAIL_LOCAL_PART_PREFIX"],"mappings":";;;;+BAAaA;;;eAAAA;;;AAAN,MAAMA,kCAAkC"}

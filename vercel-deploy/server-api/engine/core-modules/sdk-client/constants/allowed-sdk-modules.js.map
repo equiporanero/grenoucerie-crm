@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../src/engine/core-modules/sdk-client/constants/allowed-sdk-modules.ts"],"sourcesContent":["export const ALLOWED_SDK_MODULES = ['core', 'metadata'] as const;\n\nexport type SdkModuleName = (typeof ALLOWED_SDK_MODULES)[number];\n"],"names":["ALLOWED_SDK_MODULES"],"mappings":";;;;+BAAaA;;;eAAAA;;;AAAN,MAAMA,sBAAsB;IAAC;IAAQ;CAAW"}

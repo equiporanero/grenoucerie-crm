@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" class="dark">
+<html lang="es" class="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -57,15 +57,11 @@
     }
     .nav-item .icon { font-size: 1.2rem; width: 24px; text-align: center; }
     .main { margin-left: 240px; padding: 30px; }
-    .header {
-      display: flex; justify-content: space-between; align-items: center;
-      margin-bottom: 30px;
-    }
     .header h1 { font-size: 1.6rem; font-weight: 600; }
     .header .subtitle { color: var(--text-secondary); font-size: 0.85rem; margin-top: 4px; }
     .supergoal-bar {
       background: linear-gradient(135deg, var(--green1), var(--green2));
-      border-radius: 12px; padding: 20px 24px; margin-bottom: 30px;
+      border-radius: 12px; padding: 20px 24px; margin: 20px 0 30px;
       display: flex; justify-content: space-between; align-items: center;
     }
     .supergoal-bar .label { font-size: 0.8rem; opacity: 0.9; }
@@ -89,54 +85,34 @@
       background: var(--bg-card); border-radius: 12px; padding: 24px;
       border: 1px solid var(--border);
     }
-    .card h3 { font-size: 1rem; font-weight: 600; margin-bottom: 16px; display: flex; justify-content: space-between; }
+    .card h3 { font-size: 1rem; font-weight: 600; margin-bottom: 16px; }
     .pipeline { display: flex; gap: 12px; }
     .pipeline-col { flex: 1; }
-    .pipeline-col .stage {
-      text-align: center; padding: 8px; border-radius: 6px;
-      margin-bottom: 8px; font-size: 0.75rem; font-weight: 600;
-    }
-    .pipeline-col .count { font-size: 1.4rem; }
-    .pipeline-col .value { font-size: 0.7rem; color: var(--text-secondary); }
+    .pipeline-col .stage { text-align: center; padding: 8px; border-radius: 6px; margin-bottom: 8px; font-size: 0.75rem; font-weight: 600; }
+    .pipeline-col .count { font-size: 1.4rem; text-align: center; }
+    .pipeline-col .value { font-size: 0.7rem; color: var(--text-secondary); text-align: center; }
     .stage-prospect { background: #374151; }
     .stage-contacted { background: #1e3a5f; }
     .stage-trial { background: #3b2e00; }
     .stage-negotiation { background: #4c1d95; }
     .stage-signed { background: #064e3b; }
-    .deal-row {
-      display: flex; justify-content: space-between; align-items: center;
-      padding: 12px 0; border-bottom: 1px solid var(--border);
-    }
+    .deal-row { display: flex; justify-content: space-between; align-items: center; padding: 12px 0; border-bottom: 1px solid var(--border); }
     .deal-row:last-child { border-bottom: none; }
     .deal-name { font-weight: 500; font-size: 0.9rem; }
     .deal-stage { font-size: 0.7rem; padding: 2px 8px; border-radius: 4px; }
     .deal-value { font-weight: 600; font-size: 0.85rem; color: var(--accent); }
-    .distributor-row {
-      display: flex; align-items: center; gap: 12px;
-      padding: 14px 0; border-bottom: 1px solid var(--border);
-    }
+    .distributor-row { display: flex; align-items: center; gap: 12px; padding: 14px 0; border-bottom: 1px solid var(--border); }
     .distributor-row:last-child { border-bottom: none; }
-    .avatar {
-      width: 36px; height: 36px; border-radius: 50%;
-      background: linear-gradient(135deg, var(--accent), var(--accent2));
-      display: flex; align-items: center; justify-content: center;
-      font-weight: 600; font-size: 0.85rem;
-    }
+    .avatar { width: 36px; height: 36px; border-radius: 50%; background: linear-gradient(135deg, var(--accent), var(--accent2)); display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 0.85rem; }
     .distributor-info { flex: 1; }
     .distributor-name { font-weight: 500; font-size: 0.9rem; }
     .distributor-meta { color: var(--text-secondary); font-size: 0.75rem; }
-    .badge {
-      font-size: 0.65rem; padding: 3px 8px; border-radius: 4px; font-weight: 600;
-    }
+    .badge { font-size: 0.65rem; padding: 3px 8px; border-radius: 4px; font-weight: 600; }
     .badge-signed { background: #064e3b; color: var(--accent); }
     .badge-negotiation { background: #4c1d95; color: #a78bfa; }
     .badge-trial { background: #3b2e00; color: var(--warning); }
     .badge-prospect { background: #374151; color: var(--text-secondary); }
-    .alert-item {
-      display: flex; gap: 12px; padding: 14px;
-      border-radius: 8px; margin-bottom: 10px;
-      border-left: 3px solid;
-    }
+    .alert-item { display: flex; gap: 12px; padding: 14px; border-radius: 8px; margin-bottom: 10px; border-left: 3px solid; }
     .alert-critical { background: rgba(239,68,68,0.1); border-color: var(--danger); }
     .alert-warning { background: rgba(245,158,11,0.1); border-color: var(--warning); }
     .alert-info { background: rgba(59,130,246,0.1); border-color: var(--info); }
@@ -162,7 +138,7 @@
     .activity-icon { font-size: 1.1rem; width: 28px; text-align: center; flex-shrink: 0; }
     .activity-text { font-size: 0.85rem; }
     .activity-time { font-size: 0.7rem; color: var(--text-secondary); margin-top: 2px; }
-    .loading { text-align: center; padding: 40px; color: var(--text-secondary); }
+    .loading { text-align: center; padding: 60px; color: var(--text-secondary); font-size: 1.1rem; }
     .error { text-align: center; padding: 40px; color: var(--danger); }
     @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
     .fade-in { animation: fadeIn 0.5s ease-out; }
@@ -170,301 +146,130 @@
 </head>
 <body>
   <div id="app">
-    <!-- Sidebar -->
     <div class="sidebar">
       <div class="logo"><span>🐸</span> GRENOUCERIE</div>
       <nav>
-        <div class="nav-item" :class="{ active: tab === 'dashboard' }" @click="tab = 'dashboard'">
-          <span class="icon">📊</span> Dashboard
-        </div>
-        <div class="nav-item" :class="{ active: tab === 'distributors' }" @click="tab = 'distributors'">
-          <span class="icon">🏢</span> Distributeurs
-        </div>
-        <div class="nav-item" :class="{ active: tab === 'pipeline' }" @click="tab = 'pipeline'">
-          <span class="icon">💼</span> Pipeline
-        </div>
-        <div class="nav-item" :class="{ active: tab === 'activities' }" @click="tab = 'activities'">
-          <span class="icon">📋</span> Activités
-        </div>
-        <div class="nav-item" :class="{ active: tab === 'alerts' }" @click="tab = 'alerts'">
-          <span class="icon">🔔</span> Alertes
-        </div>
+        <div class="nav-item" :class="{ active: tab === 'dashboard' }" @click="tab = 'dashboard'"><span class="icon">📊</span> Dashboard</div>
+        <div class="nav-item" :class="{ active: tab === 'distributors' }" @click="tab = 'distributors'"><span class="icon">🏢</span> Distribuidores</div>
+        <div class="nav-item" :class="{ active: tab === 'pipeline' }" @click="tab = 'pipeline'"><span class="icon">💼</span> Pipeline</div>
+        <div class="nav-item" :class="{ active: tab === 'activities' }" @click="tab = 'activities'"><span class="icon">📋</span> Actividades</div>
+        <div class="nav-item" :class="{ active: tab === 'alerts' }" @click="tab = 'alerts'"><span class="icon">🔔</span> Alertas</div>
       </nav>
     </div>
-
-    <!-- Main -->
     <div class="main">
-      <div v-if="error" class="error">
-        <p>⚠️ {{ error }}</p>
-        <p style="font-size:0.8rem;margin-top:10px;">Vérifiez la connexion Supabase</p>
-      </div>
-
-      <div v-else-if="loading" class="loading">
-        <p>Chargement du CRM GRENOUCERIE... 🐸</p>
-      </div>
-
+      <div v-if="loading" class="loading"><p>Cargando CRM GRENOUCERIE... 🐸</p></div>
+      <div v-else-if="error" class="error"><p>⚠️ {{ error }}</p><p style="font-size:0.8rem;margin-top:10px;">Verifica la conexión con Supabase</p></div>
       <div v-else>
-        <!-- Supergoal -->
+        <div class="header"><h1>🐸 GRENOUCERIE CRM</h1><div class="subtitle">Dashboard · Expansión Francia 2026</div></div>
         <div class="supergoal-bar fade-in">
-          <div>
-            <div class="label">🎯 SUPERGOAL 2026</div>
-            <div class="value">€{{ formatNum(kpis.revenue) }} / €{{ formatNum(kpis.target) }}</div>
-          </div>
-          <div class="progress-container">
-            <div class="progress-bg">
-              <div class="progress-fill" :style="{ width: kpis.pct + '%' }"></div>
-            </div>
-          </div>
+          <div><div class="label">🎯 SUPERPATRÓN 2026</div><div class="value">€{{ formatNum(kpis.revenue) }} / €{{ formatNum(kpis.target) }}</div></div>
+          <div class="progress-container"><div class="progress-bg"><div class="progress-fill" :style="{ width: kpis.pct + '%' }"></div></div></div>
           <div class="pct">{{ kpis.pct }}%</div>
         </div>
-
-        <!-- KPIs -->
         <div class="kpis fade-in">
-          <div class="kpi-card">
-            <div class="label">Revenue YTD</div>
-            <div class="value" style="color:var(--accent)">€{{ formatNum(kpis.revenue) }}</div>
-            <div class="change up">↑ 15% vs target</div>
-          </div>
-          <div class="kpi-card">
-            <div class="label">Pipeline Value</div>
-            <div class="value">€{{ formatNum(kpis.pipelineValue) }}</div>
-            <div class="change up">{{ kpis.deals }} deals actifs</div>
-          </div>
-          <div class="kpi-card">
-            <div class="label">Distributeurs</div>
-            <div class="value">{{ kpis.distributors }}</div>
-            <div class="change up">{{ kpis.signed }} signés</div>
-          </div>
-          <div class="kpi-card">
-            <div class="label">Taux Conversion</div>
-            <div class="value">{{ kpis.conversionRate }}%</div>
-            <div class="change">Objectif: 20%</div>
-          </div>
+          <div class="kpi-card"><div class="label">Ingresos YTD</div><div class="value" style="color:var(--accent)">€{{ formatNum(kpis.revenue) }}</div><div class="change up">↑ 15% vs objetivo</div></div>
+          <div class="kpi-card"><div class="label">Pipeline</div><div class="value">€{{ formatNum(kpis.pipelineValue) }}</div><div class="change up">{{ kpis.deals }} deals activos</div></div>
+          <div class="kpi-card"><div class="label">Distribuidores</div><div class="value">{{ kpis.distributors }}</div><div class="change up">{{ kpis.signed }} firmados</div></div>
+          <div class="kpi-card"><div class="label">Conversión</div><div class="value">{{ kpis.conversionRate }}%</div><div class="change">Objetivo: 20%</div></div>
         </div>
-
-        <!-- Pipeline + Alerts -->
         <div class="grid-2 fade-in">
-          <div class="card">
-            <h3>Pipeline par Stage</h3>
-            <div class="pipeline">
-              <div class="pipeline-col" v-for="s in pipeline" :key="s.name">
-                <div class="stage" :class="'stage-' + s.class">{{ s.label }}</div>
-                <div class="count">{{ s.count }}</div>
-                <div class="value">€{{ formatNum(s.value) }}</div>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <h3>🔔 Alertes Actives</h3>
-            <div v-for="alert in alerts" :key="alert.id">
-              <div class="alert-item" :class="'alert-' + alert.severity">
-                <div class="alert-dot"></div>
-                <div>
-                  <div class="alert-title">{{ alert.title }}</div>
-                  <div class="alert-desc">{{ alert.description }}</div>
-                  <div class="alert-action">→ {{ alert.suggested_action }}</div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div class="card"><h3>Pipeline por Fase</h3><div class="pipeline"><div class="pipeline-col" v-for="s in pipeline" :key="s.name"><div class="stage" :class="'stage-' + s.class">{{ s.label }}</div><div class="count">{{ s.count }}</div><div class="value">€{{ formatNum(s.value) }}</div></div></div></div>
+          <div class="card"><h3>🔔 Alertas Activas</h3><div v-for="alert in alerts" :key="alert.id"><div class="alert-item" :class="'alert-' + alert.severity"><div class="alert-dot"></div><div><div class="alert-title">{{ alert.title }}</div><div class="alert-desc">{{ alert.description }}</div><div class="alert-action">→ {{ alert.suggested_action }}</div></div></div></div></div>
         </div>
-
-        <!-- Revenue + Distributors -->
         <div class="grid-2 fade-in">
-          <div class="card">
-            <h3>Revenue par Trimestre</h3>
-            <div class="revenue-chart">
-              <div class="rev-bar" v-for="q in quarters" :key="q.label">
-                <div class="amount">€{{ formatNum(q.total) }}</div>
-                <div style="display:flex;align-items:end;width:100%;height:80px;gap:2px;">
-                  <div class="bar vietnam" :style="{ height: q.vietnamH + '%' }"></div>
-                  <div class="bar premium" :style="{ height: q.premiumH + '%' }"></div>
-                </div>
-                <div class="label">{{ q.label }}</div>
-              </div>
-            </div>
-            <div class="legend">
-              <div class="legend-item"><div class="legend-dot" style="background:var(--green1)"></div> Vietnam</div>
-              <div class="legend-item"><div class="legend-dot" style="background:var(--accent2)"></div> Premium</div>
-            </div>
-          </div>
-          <div class="card">
-            <h3>🏢 Top Distributeurs</h3>
-            <div v-for="d in distributors" :key="d.id" class="distributor-row">
-              <div class="avatar">{{ d.name.charAt(0) }}</div>
-              <div class="distributor-info">
-                <div class="distributor-name">{{ d.name }}</div>
-                <div class="distributor-meta">{{ d.region }} · {{ d.channel }}</div>
-              </div>
-              <div>
-                <span class="badge" :class="'badge-' + d.stageClass">{{ d.stage }}</span>
-                <div style="text-align:right;font-size:0.75rem;color:var(--accent);margin-top:2px;">€{{ formatNum(d.deal_value_eur) }}</div>
-              </div>
-            </div>
-          </div>
+          <div class="card"><h3>Ingresos por Trimestre</h3><div class="revenue-chart"><div class="rev-bar" v-for="q in quarters" :key="q.label"><div class="amount">€{{ formatNum(q.total) }}</div><div style="display:flex;align-items:end;width:100%;height:80px;gap:2px;"><div class="bar vietnam" :style="{ height: q.vietnamH + '%' }"></div><div class="bar premium" :style="{ height: q.premiumH + '%' }"></div></div><div class="label">{{ q.label }}</div></div></div><div class="legend"><div class="legend-item"><div class="legend-dot" style="background:var(--green1)"></div> Vietnam</div><div class="legend-item"><div class="legend-dot" style="background:var(--accent2)"></div> Premium</div></div></div>
+          <div class="card"><h3>🏢 Top Distribuidores</h3><div v-for="d in distributors" :key="d.id" class="distributor-row"><div class="avatar">{{ d.name.charAt(0) }}</div><div class="distributor-info"><div class="distributor-name">{{ d.name }}</div><div class="distributor-meta">{{ d.region }} · {{ d.channel }}</div></div><div><span class="badge" :class="'badge-' + d.stageClass">{{ d.stage }}</span><div style="text-align:right;font-size:0.75rem;color:var(--accent);margin-top:2px;">€{{ formatNum(d.deal_value_eur) }}</div></div></div></div>
         </div>
-
-        <!-- Activities -->
-        <div class="card fade-in" style="margin-top:20px;">
-          <h3>📋 Activités Récentes</h3>
-          <div v-for="a in activities" :key="a.id" class="activity-item">
-            <div class="activity-icon">{{ a.icon }}</div>
-            <div>
-              <div class="activity-text"><strong>{{ a.subject }}</strong> — {{ a.description }}</div>
-              <div class="activity-time">{{ a.type }} · {{ a.status }} · par {{ a.created_by }}</div>
-            </div>
-          </div>
-        </div>
+        <div class="card fade-in" style="margin-top:20px;"><h3>📋 Actividades Recientes</h3><div v-for="a in activities" :key="a.id" class="activity-item"><div class="activity-icon">{{ a.icon }}</div><div><div class="activity-text"><strong>{{ a.subject }}</strong> — {{ a.description }}</div><div class="activity-time">{{ a.type }} · {{ a.status }} · por {{ a.created_by }}</div></div></div></div>
       </div>
     </div>
   </div>
-
   <script>
-    const { createApp, ref, onMounted, computed } = Vue;
-
+    const { createApp, ref, onMounted } = Vue;
     createApp({
       setup() {
         const loading = ref(true);
         const error = ref(null);
         const tab = ref('dashboard');
-        const supabase = ref(null);
-        const kpis = ref({ revenue: 0, target: 500000, pct: 0, pipelineValue: 0, deals: 0, distributors: 0, signed: 0, conversionRate: 0 });
+        const kpis = ref({});
         const pipeline = ref([]);
         const alerts = ref([]);
         const distributors = ref([]);
         const activities = ref([]);
         const quarters = ref([]);
+        const formatNum = (n) => { if (!n) return '0'; return n.toLocaleString('es-ES'); };
+        const stageClassMap = { prospect:'prospect', contacted:'prospect', trial:'trial', qualified:'trial', negotiation:'negotiation', proposal:'negotiation', signed:'signed', won:'signed', active:'signed', lost:'prospect' };
+        const stageLabelMap = { prospect:'Prospect', contacted:'Contactado', trial:'Trial', qualified:'Calificado', negotiation:'Negociación', proposal:'Propuesta', signed:'Firmado', won:'Ganado', active:'Activo', lost:'Perdido' };
+        const actIcon = { email:'📧', call:'📞', meeting:'🤝', note:'📝', task:'✅' };
 
-        const formatNum = (n) => { if (!n) return '0'; return n.toLocaleString('fr-FR'); };
-
-        const stageClassMap = { prospect: 'prospect', contacted: 'prospect', trial: 'trial', qualified: 'trial', negotiation: 'negotiation', proposal: 'negotiation', signed: 'signed', won: 'signed', active: 'signed', lost: 'prospect' };
-        const stageLabelMap = { prospect: 'Prospect', contacted: 'Contacté', trial: 'Trial', qualified: 'Qualified', negotiation: 'Négociation', proposal: 'Proposition', signed: 'Signé', won: 'Gagné', active: 'Actif', lost: 'Perdu' };
-        const actIcon = { email: '✉️', call: '📞', meeting: '🤝', note: '📝', task: '✅' };
-
-        const stageColors = {
-          prospect: '#6b7280', contacted: '#3b82f6', trial: '#f59e0b',
-          qualified: '#f59e0b', negotiation: '#8b5cf6', proposal: '#8b5cf6',
-          signed: '#22c55e', won: '#22c55e', active: '#22c55e'
-        };
-
-        const DEMO_DATA = {
-          kpis: { revenue: 75000, target: 500000, pct: 15, pipelineValue: 410000, deals: 4, distributors: 8, signed: 2, conversionRate: 25 },
+        const DEMO = {
+          kpis: { revenue:75000, target:500000, pct:15, pipelineValue:410000, deals:4, distributors:8, signed:2, conversionRate:25 },
           pipeline: [
-            { label: 'Prospect', class: 'prospect', count: 2, value: 130000 },
-            { label: 'Contacté', class: 'prospect', count: 1, value: 40000 },
-            { label: 'Trial', class: 'trial', count: 1, value: 60000 },
-            { label: 'Négociation', class: 'negotiation', count: 2, value: 140000 },
-            { label: 'Signé', class: 'signed', count: 2, value: 195000 }
+            { label:'Prospect', class:'prospect', count:2, value:130000 },
+            { label:'Contactado', class:'prospect', count:1, value:40000 },
+            { label:'Trial', class:'trial', count:1, value:60000 },
+            { label:'Negociación', class:'negotiation', count:2, value:140000 },
+            { label:'Firmado', class:'signed', count:2, value:195000 }
           ],
           alerts: [
-            { id: 1, severity: 'critical', title: 'Sans contact depuis 18 jours', description: 'Breizh Distribution (Pays de la Loire) - Deal de €55K en négociation', suggested_action: 'Appeler urgemment pour fermer les conditions' },
-            { id: 2, severity: 'warning', title: 'Trial sans suivi', description: 'Sud Food Distribution (Marseille) - Échantillons pas encore envoyés', suggested_action: 'Envoyer les échantillons aujourd\'hui + email de suivi' },
-            { id: 3, severity: 'info', title: 'Nouveau distributeur signé', description: 'Lyonnaise Du Poisson (Lyon) - Contrat Premium signé en mai 2026', suggested_action: 'Planifier onboarding + envoi de matériaux de marque' }
+            { id:1, severity:'critical', title:'Sin contacto 18 días', description:'Breizh Distribution (Pays de la Loire) - Deal de €55K en negociación', suggested_action:'Llamar urgentemente para cerrar condiciones' },
+            { id:2, severity:'warning', title:'Trial sin seguimiento', description:'Sud Food Distribution (Marsella) - Muestras pendientes de envío', suggested_action:'Enviar muestras hoy + email de seguimiento' },
+            { id:3, severity:'info', title:'Nuevo distribuidor firmado', description:'Lyonnaise Du Poisson (Lyon) - Contrato Premium firmado en mayo 2026', suggested_action:'Programar onboarding + envío de materiales de marca' }
           ],
           distributors: [
-            { id: 1, name: 'Paris Primeurs Premium', region: 'Île-de-France', channel: 'horeca', stage: 'Signé', stageClass: 'signed', deal_value_eur: 95000 },
-            { id: 2, name: 'Lyonnaise Du Poisson', region: 'Auvergne-Rhône-Alpes', channel: 'horeca', stage: 'Signé', stageClass: 'signed', deal_value_eur: 120000 },
-            { id: 3, name: 'Gros Distribution Paris', region: 'Île-de-France', channel: 'both', stage: 'Négociation', stageClass: 'negotiation', deal_value_eur: 85000 },
-            { id: 4, name: 'Alsace Gourmet', region: 'Grand Est', channel: 'horeca', stage: 'Actif', stageClass: 'signed', deal_value_eur: 75000 },
-            { id: 5, name: 'Breizh Distribution', region: 'Pays de la Loire', channel: 'both', stage: 'Négociation', stageClass: 'negotiation', deal_value_eur: 55000 },
-            { id: 6, name: 'Sud Food Distribution', region: 'PACA', channel: 'both', stage: 'Trial', stageClass: 'trial', deal_value_eur: 60000 },
-            { id: 7, name: 'Cap Ouest Distribution', region: 'Nouvelle-Aquitaine', channel: 'horeca', stage: 'Contacté', stageClass: 'prospect', deal_value_eur: 40000 },
-            { id: 8, name: 'Occitanie Fresh', region: 'Occitanie', channel: 'retail', stage: 'Prospect', stageClass: 'prospect', deal_value_eur: 35000 }
+            { id:1, name:'Paris Primeurs Premium', region:'Île-de-France', channel:'horeca', stage:'Firmado', stageClass:'signed', deal_value_eur:95000 },
+            { id:2, name:'Lyonnaise Du Poisson', region:'Auvergne-Rhône-Alpes', channel:'horeca', stage:'Firmado', stageClass:'signed', deal_value_eur:120000 },
+            { id:3, name:'Gros Distribution Paris', region:'Île-de-France', channel:'ambos', stage:'Negociación', stageClass:'negotiation', deal_value_eur:85000 },
+            { id:4, name:'Alsace Gourmet', region:'Grand Est', channel:'horeca', stage:'Activo', stageClass:'signed', deal_value_eur:75000 },
+            { id:5, name:'Breizh Distribution', region:'Pays de la Loire', channel:'ambos', stage:'Negociación', stageClass:'negotiation', deal_value_eur:55000 },
+            { id:6, name:'Sud Food Distribution', region:'PACA', channel:'ambos', stage:'Trial', stageClass:'trial', deal_value_eur:60000 },
+            { id:7, name:'Cap Ouest Distribution', region:'Nouvelle-Aquitaine', channel:'horeca', stage:'Contactado', stageClass:'prospect', deal_value_eur:40000 },
+            { id:8, name:'Occitanie Fresh', region:'Occitanie', channel:'retail', stage:'Prospect', stageClass:'prospect', deal_value_eur:35000 }
           ],
           activities: [
-            { id: 1, type: 'email', subject: 'Premier contact commercial', description: 'Email présentation GRENOUCERIE + catalogue produits Vietnam', status: 'completed', created_by: 'Hermes', icon: '✉️' },
-            { id: 2, type: 'meeting', subject: 'Réunion Lyon', description: 'Réunion avec directeur commercial. Intérêt confirmé en Premium.', status: 'completed', created_by: 'Paula', icon: '🤝' },
-            { id: 3, type: 'call', subject: 'Suivi Bretagne', description: 'Appel en attente pour fermer conditions commerciales', status: 'planned', created_by: 'Paula', icon: '📞' },
-            { id: 4, type: 'email', subject: 'Envoi échantillons', description: 'Envoyer échantillons Vietnam + dérivés à Marseille', status: 'planned', created_by: 'Paula', icon: '✉️' },
-            { id: 5, type: 'note', subject: 'Salon Gastronomie Paris 2026', description: 'Contact initial en foire. Très intéressé par Premium.', status: 'completed', created_by: 'Fabi', icon: '📝' }
+            { id:1, type:'email', subject:'Primer contacto comercial', description:'Email presentación GRENOUCERIE + catálogo productos Vietnam', status:'completado', created_by:'Hermes', icon:'📧' },
+            { id:2, type:'meeting', subject:'Reunión Lyon', description:'Reunión con director comercial. Interés confirmado en Premium.', status:'completado', created_by:'Paula', icon:'🤝' },
+            { id:3, type:'call', subject:'Seguimiento Bretaña', description:'Llamada pendiente para cerrar condiciones comerciales', status:'pendiente', created_by:'Paula', icon:'📞' },
+            { id:4, type:'email', subject:'Envío muestras', description:'Enviar muestras Vietnam + derivados a Marsella', status:'pendiente', created_by:'Paula', icon:'📧' },
+            { id:5, type:'note', subject:'Salón Gastronomía París 2026', description:'Contacto inicial en feria. Muy interesado en Premium.', status:'completado', created_by:'Fabi', icon:'📝' }
           ],
           quarters: [
-            { label: 'Q1', total: 75000, vietnam: 45000, premium: 30000, vietnamH: 100, premiumH: 67 },
-            { label: 'Q2', total: 0, vietnam: 0, premium: 0, vietnamH: 5, premiumH: 5 },
-            { label: 'Q3', total: 0, vietnam: 0, premium: 0, vietnamH: 5, premiumH: 5 },
-            { label: 'Q4', total: 0, vietnam: 0, premium: 0, vietnamH: 5, premiumH: 5 }
+            { label:'Q1', total:75000, vietnamH:100, premiumH:67 },
+            { label:'Q2', total:0, vietnamH:5, premiumH:5 },
+            { label:'Q3', total:0, vietnamH:5, premiumH:5 },
+            { label:'Q4', total:0, vietnamH:5, premiumH:5 }
           ]
         };
 
         onMounted(async () => {
           try {
-            // Initialize Supabase client
-            supabase.value = supabaseLib.createClient(
-              'https://iveyofwlpqtohxvxvvrp.supabase.co',
-              'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Iml2ZXlvZndscHF0b2h4dnh2dnJwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDM1MTQ3NDIsImV4cCI6MjA1OTA5MDc0Mn0.ERzzZaSjiLfCjafUp6mNjkHX3aCxv72GSe7jXaokCkCo'
-            );
-
-            // Try to load from Supabase
+            const sb = supabaseLib.createClient('https://iveyofwlpqtohxvxvvrp.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Iml2ZXlvZndscHF0b2h4dnh2dnJwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk4OTI1NTksImV4cCI6MjA5NTQ2ODU1OX0.f7Xfy_anbIaB-z0u1Hn6DI5RDzjalovP2oehDflEfiE');
             const [distRes, dealRes, alertRes, actRes, revRes] = await Promise.all([
-              supabase.value.from('distributors').select('*').order('deal_value_eur', { ascending: false }),
-              supabase.value.from('deals').select('*').order('value_eur', { ascending: false }),
-              supabase.value.from('alerts').select('*').order('created_at', { ascending: false }),
-              supabase.value.from('activities').select('*').order('created_at', { ascending: false }).limit(10),
-              supabase.value.from('revenue_tracking').select('*').order('period_start')
+              sb.from('distributors').select('*').order('deal_value_eur', { ascending:false }),
+              sb.from('deals').select('*').order('value_eur', { ascending:false }),
+              sb.from('alerts').select('*').order('created_at', { ascending:false }),
+              sb.from('activities').select('*').order('created_at', { ascending:false }).limit(10),
+              sb.from('revenue_tracking').select('*').order('period_start')
             ]);
-
-            if (distRes.error || !distRes.data || distRes.data.length === 0) {
-              throw new Error('No data');
-            }
-
-            // ... rest of Supabase data processing ...
-            distributors.value = (distRes.data || []).map(d => ({
-              ...d,
-              stageClass: stageClassMap[d.stage] || 'prospect',
-              stage: stageLabelMap[d.stage] || d.stage
-            }));
-
-            const totalRevenue = (revRes.data || []).reduce((s, r) => s + (r.cumulative_revenue_eur || 0), 0);
-            const pipelineVal = (dealRes.data || []).reduce((s, d) => s + (d.value_eur || 0), 0);
-            const signedCount = distributors.value.filter(d => ['signed','won','active'].includes(d.stage)).length;
-            kpis.value = {
-              revenue: totalRevenue, target: 500000,
-              pct: Math.round(totalRevenue / 500000 * 100),
-              pipelineValue: pipelineVal, deals: (dealRes.data || []).length,
-              distributors: distributors.value.length, signed: signedCount,
-              conversionRate: distributors.value.length ? Math.round(signedCount / distributors.value.length * 100) : 0
-            };
-
-            const stages = ['Prospect', 'Contacté', 'Trial', 'Négociation', 'Signé'];
-            const stageKeys = ['prospect', 'contacted', 'trial', 'negotiation', 'signed'];
-            pipeline.value = stages.map((label, i) => {
-              const deals = (dealRes.data || []).filter(d => stageClassMap[d.stage] === stageKeys[i]);
-              return { label, class: stageKeys[i], count: deals.length, value: deals.reduce((s, d) => s + (d.value_eur || 0), 0) };
-            });
-
-            alerts.value = (alertRes.data || []).map(a => ({
-              ...a,
-              severity: a.severity || (a.type === 'no_contact' ? 'critical' : a.type === 'deal_at_risk' ? 'warning' : 'info')
-            }));
-            activities.value = (actRes.data || []).map(a => ({ ...a, icon: actIcon[a.type] || '📌' }));
-
-            const qData = revRes.data || [];
-            if (qData.length > 0) {
-              const maxRev = Math.max(...qData.map(r => (r.revenue_eur || 0) + 1), 1);
-              quarters.value = qData.map(r => ({
-                label: `Q${Math.ceil((new Date(r.period_start).getMonth() + 1) / 3)}`,
-                total: r.revenue_eur || 0,
-                vietnam: r.vietnam_revenue_eur || 0, premium: r.premium_revenue_eur || 0,
-                vietnamH: Math.max(5, ((r.vietnam_revenue_eur || 0) / maxRev) * 100),
-                premiumH: Math.max(5, ((r.premium_revenue_eur || 0) / maxRev) * 100)
-              }));
-            }
-
-          } catch (e) {
-            console.warn('Supabase unavailable, using demo data:', e.message);
-            // Use demo data
-            kpis.value = DEMO_DATA.kpis;
-            pipeline.value = DEMO_DATA.pipeline;
-            alerts.value = DEMO_DATA.alerts;
-            distributors.value = DEMO_DATA.distributors;
-            activities.value = DEMO_DATA.activities;
-            quarters.value = DEMO_DATA.quarters;
-          } finally {
-            loading.value = false;
-          }
+            if (distRes.error || !distRes.data?.length) throw new Error('Sin datos');
+            distributors.value = distRes.data.map(d => ({ ...d, stageClass: stageClassMap[d.stage]||'prospect', stage: stageLabelMap[d.stage]||d.stage }));
+            const totalRev = (revRes.data||[]).reduce((s,r) => s+(r.cumulative_revenue_eur||0), 0);
+            const pipVal = (dealRes.data||[]).reduce((s,d) => s+(d.value_eur||0), 0);
+            const signed = distributors.value.filter(d => ['signed','won','active'].includes(d.stage)).length;
+            kpis.value = { revenue:totalRev, target:500000, pct:Math.round(totalRev/500000*100), pipelineValue:pipVal, deals:(dealRes.data||[]).length, distributors:distributors.value.length, signed, conversionRate:distributors.value.length?Math.round(signed/distributors.value.length*100):0 };
+            const stages = ['Prospect','Contactado','Trial','Negociación','Firmado'];
+            const keys = ['prospect','contacted','trial','negotiation','signed'];
+            pipeline.value = stages.map((label,i) => { const deals = (dealRes.data||[]).filter(d => stageClassMap[d.stage]===keys[i]); return { label, class:keys[i], count:deals.length, value:deals.reduce((s,d)=>s+(d.value_eur||0),0) }; });
+            alerts.value = (alertRes.data||[]).map(a => ({ ...a, severity:a.severity||(a.type==='no_contact'?'critical':a.type==='deal_at_risk'?'warning':'info') }));
+            activities.value = (actRes.data||[]).map(a => ({ ...a, icon:actIcon[a.type]||'📌' }));
+            const qd = revRes.data||[];
+            if (qd.length) { const maxR = Math.max(...qd.map(r=>(r.revenue_eur||0)+1),1); quarters.value = qd.map(r => ({ label:`Q${Math.ceil((new Date(r.period_start).getMonth()+1)/3)}`, total:r.revenue_eur||0, vietnamH:Math.max(5,((r.vietnam_revenue_eur||0)/maxR)*100), premiumH:Math.max(5,((r.premium_revenue_eur||0)/maxR)*100) })); }
+          } catch(e) {
+            console.warn('Supabase no disponible, usando datos demo:', e.message);
+            kpis.value = DEMO.kpis; pipeline.value = DEMO.pipeline; alerts.value = DEMO.alerts; distributors.value = DEMO.distributors; activities.value = DEMO.activities; quarters.value = DEMO.quarters;
+          } finally { loading.value = false; }
         });
-
-        return { loading, error, tab, kpis, pipeline, alerts, distributors, activities, quarters, formatNum, stageColors };
+        return { loading, error, tab, kpis, pipeline, alerts, distributors, activities, quarters, formatNum };
       }
     }).mount('#app');
   </script>

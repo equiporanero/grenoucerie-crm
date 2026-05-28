@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../src/engine/workspace-manager/workspace-cleaner/constants/user-workspace-deletion-warning-sent-key.constant.ts"],"sourcesContent":["export const USER_WORKSPACE_DELETION_WARNING_SENT_KEY =\n  'USER_WORKSPACE_DELETION_WARNING_SENT';\n"],"names":["USER_WORKSPACE_DELETION_WARNING_SENT_KEY"],"mappings":";;;;+BAAaA;;;eAAAA;;;AAAN,MAAMA,2CACX"}

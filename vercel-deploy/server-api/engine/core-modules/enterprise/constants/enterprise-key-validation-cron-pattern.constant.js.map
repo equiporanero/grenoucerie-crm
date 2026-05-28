@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../src/engine/core-modules/enterprise/constants/enterprise-key-validation-cron-pattern.constant.ts"],"sourcesContent":["// Run daily at 4 AM UTC\nexport const ENTERPRISE_KEY_VALIDATION_CRON_PATTERN = '0 4 * * *';\n"],"names":["ENTERPRISE_KEY_VALIDATION_CRON_PATTERN"],"mappings":"AAAA,wBAAwB;;;;;+BACXA;;;eAAAA;;;AAAN,MAAMA,yCAAyC"}

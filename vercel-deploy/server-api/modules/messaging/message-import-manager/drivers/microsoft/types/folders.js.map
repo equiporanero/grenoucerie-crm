@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../../../src/modules/messaging/message-import-manager/drivers/microsoft/types/folders.ts"],"sourcesContent":["export enum MessageFolderName {\n  INBOX = 'inbox',\n  SENT_ITEMS = 'sentItems',\n}\n"],"names":["MessageFolderName"],"mappings":";;;;+BAAYA;;;eAAAA;;;AAAL,IAAA,AAAKA,2CAAAA;;;WAAAA"}

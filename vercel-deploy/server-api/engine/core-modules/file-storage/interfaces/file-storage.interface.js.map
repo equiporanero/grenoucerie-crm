@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../src/engine/core-modules/file-storage/interfaces/file-storage.interface.ts"],"sourcesContent":["export enum StorageDriverType {\n  S_3 = 'S_3',\n  LOCAL = 'LOCAL',\n}\n"],"names":["StorageDriverType"],"mappings":";;;;+BAAYA;;;eAAAA;;;AAAL,IAAA,AAAKA,2CAAAA;;;WAAAA"}

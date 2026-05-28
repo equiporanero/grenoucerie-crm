@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../src/modules/timeline/constants/system-objects-with-timeline-activities.constant.ts"],"sourcesContent":["export const SYSTEM_OBJECTS_WITH_TIMELINE_ACTIVITIES = [\n  'noteTarget',\n  'taskTarget',\n];\n"],"names":["SYSTEM_OBJECTS_WITH_TIMELINE_ACTIVITIES"],"mappings":";;;;+BAAaA;;;eAAAA;;;AAAN,MAAMA,0CAA0C;IACrD;IACA;CACD"}

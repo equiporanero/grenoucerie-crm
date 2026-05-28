@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../src/engine/api/mcp/constants/mcp-server-info.const.ts"],"sourcesContent":["export const MCP_SERVER_INFO = {\n  name: 'Twenty MCP Server',\n  version: '0.1.0',\n};\n"],"names":["MCP_SERVER_INFO","name","version"],"mappings":";;;;+BAAaA;;;eAAAA;;;AAAN,MAAMA,kBAAkB;IAC7BC,MAAM;IACNC,SAAS;AACX"}

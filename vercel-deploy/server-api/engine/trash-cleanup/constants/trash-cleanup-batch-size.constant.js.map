@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../src/engine/trash-cleanup/constants/trash-cleanup-batch-size.constant.ts"],"sourcesContent":["export const TRASH_CLEANUP_BATCH_SIZE = 1_000;\n"],"names":["TRASH_CLEANUP_BATCH_SIZE"],"mappings":";;;;+BAAaA;;;eAAAA;;;AAAN,MAAMA,2BAA2B"}

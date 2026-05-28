@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../../../src/modules/workflow/workflow-trigger/automated-trigger/crons/constants/workflow-cron-trigger-cache-ttl.constant.ts"],"sourcesContent":["export const WORKFLOW_CRON_TRIGGER_CACHE_TTL_MS = 60 * 60 * 1000;\n"],"names":["WORKFLOW_CRON_TRIGGER_CACHE_TTL_MS"],"mappings":";;;;+BAAaA;;;eAAAA;;;AAAN,MAAMA,qCAAqC,KAAK,KAAK"}

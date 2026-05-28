@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../src/modules/messaging/message-import-manager/constants/messaging-throttle-duration.ts"],"sourcesContent":["export const MESSAGING_THROTTLE_DURATION = 1000 * 60 * 1; // 1 minute\n"],"names":["MESSAGING_THROTTLE_DURATION"],"mappings":";;;;+BAAaA;;;eAAAA;;;AAAN,MAAMA,8BAA8B,OAAO,KAAK,GAAG,WAAW"}

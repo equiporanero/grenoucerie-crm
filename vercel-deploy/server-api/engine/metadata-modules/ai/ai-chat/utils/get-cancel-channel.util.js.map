@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../../src/engine/metadata-modules/ai/ai-chat/utils/get-cancel-channel.util.ts"],"sourcesContent":["export const getCancelChannel = (threadId: string) =>\n  `ai-stream:cancel:${threadId}`;\n"],"names":["getCancelChannel","threadId"],"mappings":";;;;+BAAaA;;;eAAAA;;;AAAN,MAAMA,mBAAmB,CAACC,WAC/B,CAAC,iBAAiB,EAAEA,UAAU"}

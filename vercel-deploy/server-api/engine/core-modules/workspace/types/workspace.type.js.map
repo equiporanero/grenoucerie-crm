@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../src/engine/core-modules/workspace/types/workspace.type.ts"],"sourcesContent":["export enum AuthProviderEnum {\n  Google = 'google',\n  Microsoft = 'microsoft',\n  Password = 'password',\n  SSO = 'sso',\n  Impersonation = 'impersonation',\n}\n"],"names":["AuthProviderEnum"],"mappings":";;;;+BAAYA;;;eAAAA;;;AAAL,IAAA,AAAKA,0CAAAA;;;;;;WAAAA"}

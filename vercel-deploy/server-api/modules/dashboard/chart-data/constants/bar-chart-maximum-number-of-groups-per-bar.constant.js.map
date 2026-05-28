@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../src/modules/dashboard/chart-data/constants/bar-chart-maximum-number-of-groups-per-bar.constant.ts"],"sourcesContent":["export const BAR_CHART_MAXIMUM_NUMBER_OF_GROUPS_PER_BAR = 50;\n"],"names":["BAR_CHART_MAXIMUM_NUMBER_OF_GROUPS_PER_BAR"],"mappings":";;;;+BAAaA;;;eAAAA;;;AAAN,MAAMA,6CAA6C"}

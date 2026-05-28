@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../src/modules/calendar/calendar-event-import-manager/constants/calendar-event-import-batch-size.ts"],"sourcesContent":["export const CALENDAR_EVENT_IMPORT_BATCH_SIZE = 100;\n"],"names":["CALENDAR_EVENT_IMPORT_BATCH_SIZE"],"mappings":";;;;+BAAaA;;;eAAAA;;;AAAN,MAAMA,mCAAmC"}
