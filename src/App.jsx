@@ -1,41 +1,47 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, lazy, Suspense } from 'react'
 import Sidebar from './components/Sidebar'
 import Dashboard from './components/Dashboard/Dashboard'
-import Pipeline from './components/Pipeline/Pipeline'
-import Funnel from './components/Funnel/Funnel'
-import Contenidos from './components/Contenidos/Contenidos'
-import Francia from './components/Francia/Francia'
-import RRSS from './components/RRSS/RRSS'
-import RevenueTracker from './components/RevenueTracker/RevenueTracker'
-import OutboundEngine from './components/Outbound/OutboundEngine'
-import CalculadoraMargenes from './components/Calculadora/CalculadoraMargenes'
-import Petfood from './components/Petfood/Petfood'
-import Stack from './components/Stack/Stack'
-import Prompt from './components/Prompt/Prompt'
-import Roadmap from './components/Roadmap/Roadmap'
-import Conexiones from './components/Conexiones/Conexiones'
-import Chatwoot from './components/Chatwoot/Chatwoot'
 import './index.css'
 
+// Lazy load — solo se cargan cuando se usan
+const Francia = lazy(() => import('./components/Francia/Francia'))
+const RRSS = lazy(() => import('./components/RRSS/RRSS'))
+const RevenueTracker = lazy(() => import('./components/RevenueTracker/RevenueTracker'))
+const OutboundEngine = lazy(() => import('./components/Outbound/OutboundEngine'))
+const CalculadoraMargenes = lazy(() => import('./components/Calculadora/CalculadoraMargenes'))
+const Petfood = lazy(() => import('./components/Petfood/Petfood'))
+const Stack = lazy(() => import('./components/Stack/Stack'))
+const Prompt = lazy(() => import('./components/Prompt/Prompt'))
+const Roadmap = lazy(() => import('./components/Roadmap/Roadmap'))
+const Conexiones = lazy(() => import('./components/Conexiones/Conexiones'))
+const Chatwoot = lazy(() => import('./components/Chatwoot/Chatwoot'))
+const Contenidos = lazy(() => import('./components/Contenidos/Contenidos'))
+const Funnel = lazy(() => import('./components/Funnel/Funnel'))
+const Pipeline = lazy(() => import('./components/Pipeline/Pipeline'))
+
 const VISTAS = {
-    dashboard:       Dashboard,
-    funnel:          Funnel,
-    pipeline:        Pipeline,
-    contenidos:      Contenidos,
-    roadmap:         Roadmap,
-    espana:          Dashboard,
-    francia:         Francia,
-    petfood:         Petfood,
-    conexiones:      Conexiones,
-    rrss:            RRSS,
-    revenuetracker:  RevenueTracker,
-    outbound:        OutboundEngine,
-    calculadora:     CalculadoraMargenes,
-    stack:           Stack,
-    prompt:          Prompt,
-    brightbean:      RRSS,
-    chatwoot:        Chatwoot,
+    dashboard:      Dashboard,
+    funnel:         Funnel,
+    pipeline:       Pipeline,
+    contenidos:     Contenidos,
+    roadmap:        Roadmap,
+    francia:        Francia,
+    petfood:        Petfood,
+    conexiones:     Conexiones,
+    rrss:           RRSS,
+    revenuetracker: RevenueTracker,
+    outbound:       OutboundEngine,
+    calculadora:    CalculadoraMargenes,
+    stack:          Stack,
+    prompt:         Prompt,
+    chatwoot:       Chatwoot,
 }
+
+const LoadingView = () => (
+    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '60vh', color: 'var(--text-muted)', fontSize: '13px' }}>
+        Cargando...
+    </div>
+)
 
 export default function App() {
     const [vistaActual, setVistaActual] = useState('dashboard')
@@ -61,7 +67,9 @@ export default function App() {
                 toggleTema={toggleTema}
             />
             <main className="main-content">
-                <Componente cambiarVista={setVistaActual} />
+                <Suspense fallback={<LoadingView />}>
+                    <Componente cambiarVista={setVistaActual} />
+                </Suspense>
             </main>
         </div>
     )

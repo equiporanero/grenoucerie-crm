@@ -1,38 +1,38 @@
 const navGroups = [
     {
-        label: 'MANDO',
+        label: 'CORE',
         items: [
-            { id: 'dashboard',       icon: '▣', label: 'Centro de Mando' },
-            { id: 'revenuetracker',  icon: '🎯', label: 'Revenue Tracker', highlight: true, badge: '€500K' },
-            { id: 'outbound',        icon: '🚀', label: 'Outbound Engine', highlight: true, badge: 'FR' },
-            { id: 'funnel',          icon: '🔻', label: 'Embudo de Mercado' },
-            { id: 'pipeline',        icon: '⇒', label: 'Pipeline B2B' },
-            { id: 'roadmap',         icon: '◈', label: 'Roadmap 90d' },
+            { id: 'dashboard',      icon: '▣', label: 'Centro de Mando' },
+            { id: 'outbound',       icon: '🚀', label: 'Outbound Engine', highlight: true },
+            { id: 'calculadora',    icon: '💰', label: 'Calculadora Márgenes' },
         ],
     },
     {
         label: 'GAMAS',
         items: [
-            { id: 'vietnam',   icon: '🇻🇳', label: 'Vietnam · 10x' },
-            { id: 'premium',   icon: '⭐', label: 'Premium · 1x' },
-            { id: 'francia',   icon: '🇫🇷', label: 'Francia ×20' },
-            { id: 'contenidos', icon: '✦', label: 'Contenidos' },
+            { id: 'francia',    icon: '🇫🇷', label: 'Francia ×20' },
+            { id: 'vietnam',    icon: '🇻🇳', label: 'Vietnam · 10x' },
+            { id: 'premium',    icon: '⭐', label: 'Premium · 1x' },
+            { id: 'petfood',    icon: '🐾', label: 'Petfood' },
         ],
     },
     {
-        label: 'HERRAMIENTAS',
+        label: 'MARKETING',
         items: [
-            { id: 'calculadora', icon: '💰', label: 'Calculadora Márgenes' },
-            { id: 'rrss',        icon: '📱', label: 'Redes Sociales', badge: 'nuevo' },
-            { id: 'chatwoot',    icon: '💬', label: 'Atención Cliente', badge: 'nuevo' },
+            { id: 'revenuetracker', icon: '🎯', label: 'Revenue Tracker' },
+            { id: 'rrss',           icon: '📱', label: 'Redes Sociales' },
+            { id: 'contenidos',     icon: '✦', label: 'Contenidos' },
+            { id: 'funnel',         icon: '🔻', label: 'Embudo' },
         ],
     },
     {
         label: 'SISTEMA',
         items: [
             { id: 'conexiones', icon: '⬡', label: 'Conexiones', highlight: true },
-            { id: 'stack',      icon: '◎', label: 'Stack Tech' },
+            { id: 'pipeline',   icon: '⇒', label: 'Pipeline B2B' },
+            { id: 'roadmap',    icon: '◈', label: 'Roadmap 90d' },
             { id: 'prompt',     icon: '⊛', label: 'Prompt Maestro' },
+            { id: 'stack',      icon: '◎', label: 'Stack Tech' },
         ],
     },
 ]
@@ -47,7 +47,7 @@ export default function Sidebar({ vistaActual, cambiarVista, tema, toggleTema })
                         <div className="sidebar-logo-name">Grenoucerie</div>
                     </div>
                 </div>
-                <div className="sidebar-logo-tag">Marketing CMD v6.0</div>
+                <div className="sidebar-logo-tag">Marketing CMD v7.0</div>
             </div>
 
             <div className="sidebar-nav">
@@ -119,16 +119,12 @@ export default function Sidebar({ vistaActual, cambiarVista, tema, toggleTema })
                 </div>
                 <div className="sidebar-kpis">
                     <div className="sidebar-kpi-row">
-                        <span>Revenue/mes</span>
-                        <span className="sidebar-kpi-val">€60K</span>
-                    </div>
-                    <div className="sidebar-kpi-row">
-                        <span>Pipeline</span>
+                        <span>Pipeline FR</span>
                         <span className="sidebar-kpi-val" style={{ color: 'var(--alert)' }}>0 leads</span>
                     </div>
                     <div className="sidebar-kpi-row">
-                        <span>Run rate</span>
-                        <span className="sidebar-kpi-val">€720K</span>
+                        <span>Goal</span>
+                        <span className="sidebar-kpi-val" style={{ color: 'var(--brand)' }}>€500K</span>
                     </div>
                 </div>
                 <div style={{
@@ -144,31 +140,6 @@ export default function Sidebar({ vistaActual, cambiarVista, tema, toggleTema })
                 }}>
                     "La carne más saludable del mundo"
                 </div>
-
-                <a
-                    href="https://grenoucerie-platform.vercel.app"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{
-                        marginTop: '8px',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'space-between',
-                        padding: '7px 9px',
-                        background: 'rgba(74,124,63,0.12)',
-                        borderRadius: 'var(--radius-sm)',
-                        border: '1px solid rgba(74,124,63,0.3)',
-                        fontSize: '9px',
-                        color: 'var(--brand)',
-                        fontFamily: 'DM Mono, monospace',
-                        textDecoration: 'none',
-                        cursor: 'pointer',
-                        transition: 'background 0.2s',
-                    }}
-                >
-                    <span>⚡ CRM / WhatsApp / Agentes</span>
-                    <span>↗</span>
-                </a>
 
                 <div style={{ marginTop: '12px' }}>
                     <button
