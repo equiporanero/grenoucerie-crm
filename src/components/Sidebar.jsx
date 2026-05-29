@@ -3,7 +3,8 @@ const navGroups = [
         label: 'CORE',
         items: [
             { id: 'dashboard',      icon: '▣', label: 'Centro de Mando' },
-            { id: 'outbound',       icon: '🚀', label: 'Outbound Engine', highlight: true },
+            { id: 'agents',         icon: '🤖', label: 'Agent Dashboard', highlight: true, badge: '8' },
+            { id: 'outbound',       icon: '🚀', label: 'Outbound Engine' },
             { id: 'calculadora',    icon: '💰', label: 'Calculadora Márgenes' },
         ],
     },

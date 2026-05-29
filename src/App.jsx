@@ -8,6 +8,7 @@ const Francia = lazy(() => import('./components/Francia/Francia'))
 const RRSS = lazy(() => import('./components/RRSS/RRSS'))
 const RevenueTracker = lazy(() => import('./components/RevenueTracker/RevenueTracker'))
 const OutboundEngine = lazy(() => import('./components/Outbound/OutboundEngine'))
+const AgentDashboard = lazy(() => import('./components/Agents/AgentDashboard'))
 const CalculadoraMargenes = lazy(() => import('./components/Calculadora/CalculadoraMargenes'))
 const Petfood = lazy(() => import('./components/Petfood/Petfood'))
 const Stack = lazy(() => import('./components/Stack/Stack'))
@@ -31,6 +32,7 @@ const VISTAS = {
     rrss:           RRSS,
     revenuetracker: RevenueTracker,
     outbound:       OutboundEngine,
+    agents:         AgentDashboard,
     calculadora:    CalculadoraMargenes,
     stack:          Stack,
     prompt:         Prompt,
