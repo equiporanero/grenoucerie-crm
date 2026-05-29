@@ -12,7 +12,7 @@ const FALLBACK = {
     alerts: [],
     revenue: { total: 0, goal: 500000, pct: 0 },
     byStage: { prospeccion: 0, contacto: 0, muestra: 0, negociacion: 0, activo: 0, embajador: 0 },
-    byGama: { vietnam: 0, premium: 0, club: 0, despieces: 0 },
+    byGama: { Vietnam: 0, Premium: 0, Club: 0, Despieces: 0 },
     byMarket: { ES: 0, FR: 0 },
     loading: false,
     error: null,
@@ -65,28 +65,15 @@ export function useCRMData() {
                     byStage[phase]++
                 })
 
-                // Por gama: usar product_type del distribuidor o del deal
-                const byGama = { vietnam: 0, premium: 0, club: 0, despieces: 0 }
+                const byGama = { Vietnam: 0, Premium: 0, Club: 0, Despieces: 0 }
                 distributors.forEach(d => {
-                    if (d.product_type) {
-                        const pt = d.product_type.toLowerCase()
-                        if (pt.includes('vietnam')) byGama.vietnam++
-                        if (pt.includes('premium')) byGama.premium++
-                        if (pt.includes('club') || pt.includes('fresca')) byGama.club++
-                        if (pt.includes('despiece') || pt.includes('decoupe')) byGama.despieces++
-                    }
-                    // También contar por flags booleanos si existen
-                    if (d.has_vietnam) byGama.vietnam++
-                    if (d.has_premium) byGama.premium++
-                    if (d.has_club) byGama.club++
-                    if (d.has_despieces) byGama.despieces++
+                    if (d.has_vietnam) byGama.Vietnam++
+                    if (d.has_premium) byGama.Premium++
+                    // Club y Despieces se determinan por el tipo de deal
                 })
                 deals.forEach(d => {
-                    if (d.product_type) {
-                        const pt = d.product_type.toLowerCase()
-                        if (pt.includes('vietnam')) byGama.vietnam = Math.max(byGama.vietnam, byGama.vietnam) // no duplicar
-                        if (pt.includes('premium')) byGama.premium = Math.max(byGama.premium, byGama.premium)
-                    }
+                    if (d.product_type === 'vietnam') byGama.Vietnam++
+                    if (d.product_type === 'premium') byGama.Premium++
                 })
 
                 const byMarket = { ES: 0, FR: 0 }

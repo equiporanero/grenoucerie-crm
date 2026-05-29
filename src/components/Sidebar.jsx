@@ -2,36 +2,34 @@ const navGroups = [
     {
         label: 'CORE',
         items: [
-            { id: 'dashboard',      icon: '▣', label: 'Centro de Mando' },
-            { id: 'agents',         icon: '🤖', label: 'Agent Dashboard', highlight: true, badge: '8' },
-            { id: 'outbound',       icon: '🚀', label: 'Outbound Engine' },
-            { id: 'calculadora',    icon: '💰', label: 'Calculadora Márgenes' },
+            { id: 'dashboard',   icon: '▣', label: 'Centro de Mando' },
+            { id: 'pipeline',    icon: '⇒', label: 'Pipeline B2B' },
+            { id: 'agents',      icon: '🤖', label: 'Agentes', highlight: true, badge: '8' },
         ],
     },
     {
         label: 'GAMAS',
         items: [
             { id: 'francia',    icon: '🇫🇷', label: 'Francia ×20' },
-            { id: 'vietnam',    icon: '🇻🇳', label: 'Vietnam · 10x' },
-            { id: 'premium',    icon: '⭐', label: 'Premium · 1x' },
-            { id: 'petfood',    icon: '🐾', label: 'Petfood' },
+            { id: 'espana',      icon: '🇪🇸', label: 'España' },
+            { id: 'petfood',     icon: '🐾', label: 'Petfood' },
+            { id: 'contenidos',  icon: '✦', label: 'Contenidos' },
         ],
     },
     {
-        label: 'MARKETING',
+        label: 'VENTAS',
         items: [
-            { id: 'revenuetracker', icon: '🎯', label: 'Revenue Tracker' },
-            { id: 'rrss',           icon: '📱', label: 'Redes Sociales' },
-            { id: 'contenidos',     icon: '✦', label: 'Contenidos' },
-            { id: 'funnel',         icon: '🔻', label: 'Embudo' },
+            { id: 'calculadora',    icon: '💰', label: 'Márgenes' },
+            { id: 'outbound',        icon: '🚀', label: 'Outbound FR' },
+            { id: 'revenuetracker',  icon: '🎯', label: 'Revenue €500K' },
         ],
     },
     {
         label: 'SISTEMA',
         items: [
-            { id: 'conexiones', icon: '⬡', label: 'Conexiones', highlight: true },
-            { id: 'pipeline',   icon: '⇒', label: 'Pipeline B2B' },
+            { id: 'rrss',       icon: '📱', label: 'Redes Sociales' },
             { id: 'roadmap',    icon: '◈', label: 'Roadmap 90d' },
+            { id: 'conexiones', icon: '⬡', label: 'Conexiones', highlight: true },
             { id: 'prompt',     icon: '⊛', label: 'Prompt Maestro' },
             { id: 'stack',      icon: '◎', label: 'Stack Tech' },
         ],
@@ -48,7 +46,7 @@ export default function Sidebar({ vistaActual, cambiarVista, tema, toggleTema })
                         <div className="sidebar-logo-name">Grenoucerie</div>
                     </div>
                 </div>
-                <div className="sidebar-logo-tag">Marketing CMD v7.0</div>
+                <div className="sidebar-logo-tag">Marketing CMD v8.0</div>
             </div>
 
             <div className="sidebar-nav">
@@ -80,7 +78,7 @@ export default function Sidebar({ vistaActual, cambiarVista, tema, toggleTema })
                                 }}>
                                     {item.label}
                                 </span>
-                                {item.badge && vistaActual !== item.id && (
+                                {item.badge && (
                                     <span style={{
                                         marginLeft: 'auto',
                                         padding: '1px 5px',
@@ -97,16 +95,7 @@ export default function Sidebar({ vistaActual, cambiarVista, tema, toggleTema })
                                         {item.badge}
                                     </span>
                                 )}
-                                {item.highlight && (
-                                    <span style={{
-                                        marginLeft: 'auto',
-                                        width: '5px', height: '5px',
-                                        borderRadius: '50%',
-                                        background: 'var(--warn)',
-                                        boxShadow: '0 0 5px var(--warn)',
-                                        flexShrink: 0,
-                                    }} />
-                                )}
+                                {!item.highlight && vistaActual !== item.id && item.badge && null}
                             </button>
                         ))}
                     </div>
@@ -120,12 +109,12 @@ export default function Sidebar({ vistaActual, cambiarVista, tema, toggleTema })
                 </div>
                 <div className="sidebar-kpis">
                     <div className="sidebar-kpi-row">
-                        <span>Pipeline FR</span>
-                        <span className="sidebar-kpi-val" style={{ color: 'var(--alert)' }}>0 leads</span>
-                    </div>
-                    <div className="sidebar-kpi-row">
                         <span>Goal</span>
                         <span className="sidebar-kpi-val" style={{ color: 'var(--brand)' }}>€500K</span>
+                    </div>
+                    <div className="sidebar-kpi-row">
+                        <span>Pipeline</span>
+                        <span className="sidebar-kpi-val" style={{ color: 'var(--alert)' }}>0 leads</span>
                     </div>
                 </div>
                 <div style={{
@@ -141,7 +130,6 @@ export default function Sidebar({ vistaActual, cambiarVista, tema, toggleTema })
                 }}>
                     "La carne más saludable del mundo"
                 </div>
-
                 <div style={{ marginTop: '12px' }}>
                     <button
                         onClick={toggleTema}
@@ -164,9 +152,7 @@ export default function Sidebar({ vistaActual, cambiarVista, tema, toggleTema })
                         }}
                         title={tema === 'oscuro' ? 'Cambiar a modo día' : 'Cambiar a modo noche'}
                     >
-                        <span style={{ fontSize: '13px' }}>
-                            {tema === 'oscuro' ? '☀️' : '🌙'}
-                        </span>
+                        <span style={{ fontSize: '13px' }}>{tema === 'oscuro' ? '☀️' : '🌙'}</span>
                         {tema === 'oscuro' ? 'Activar modo día' : 'Activar modo noche'}
                     </button>
                 </div>

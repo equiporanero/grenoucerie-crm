@@ -185,13 +185,11 @@ function SupergoBar({ crmData }) {
 // ═══ ACCIONES SEMANALES ═══
 function AccionesSemanales({ crmData }) {
     const acciones = [
-        { color: 'var(--alert)', icono: '🔴', accion: 'Cargar distribuidores reales en CRM — separar por gama (Vietnam/Premium/Club/Despieces)', deadline: 'HOY' },
-        { color: 'var(--alert)', icono: '🔴', accion: 'Publicar 1er post TOFU: "¿Conoces la carne más saludable del mundo?" — 0 marca, 0 gama', deadline: 'Esta semana' },
-        { color: 'var(--warn)', icono: '🟡', accion: 'Lista 50 targets multi-gama: 20 Vietnam + 15 Premium + 10 Despieces + 5 Club', deadline: 'Semana 2' },
-        { color: 'var(--warn)', icono: '🟡', accion: 'Activar LinkedIn ES+FR: 0 posts → 10K impresiones/mes. Narrativa CATEGORÍA', deadline: 'Semana 2' },
-        { color: 'var(--warn)', icono: '🟡', accion: 'Preparar kit muestras: Premium + Despieces (ANCACHUPS, SUPRÊMES, PERLES)', deadline: 'Semana 3' },
-        { color: 'var(--ok)', icono: '🟢', accion: 'Publicar tabla nutricional rana vs carnes — claim: 0.3g grasa/100g', deadline: 'Semana 3' },
-        { color: 'var(--ok)', icono: '🟢', accion: 'Investigar Top 50 distribuidores FR + 30 restaurantes grenouille', deadline: 'Semana 4' },
+        { color: 'var(--alert)', icono: '🔴', accion: 'Cargar distribuidores reales en CRM (HubSpot o Supabase)', deadline: 'HOY' },
+        { color: 'var(--alert)', icono: '🔴', accion: `Publicar primer post TOFU: "¿Conoces la carne más saludable del mundo?"`, deadline: 'Esta semana' },
+        { color: 'var(--warn)', icono: '🟡', accion: 'Construir lista 50 targets: 20 Vietnam + 20 Premium + 10 restaurantes', deadline: 'Semana 2' },
+        { color: 'var(--warn)', icono: '🟡', accion: 'Activar LinkedIn: 0 posts, 0 impresiones. Meta: 10K/mes', deadline: 'Semana 2' },
+        { color: 'var(--ok)', icono: '🟢', accion: 'Publicar tabla nutricional rana vs carnes en web', deadline: 'Semana 3' },
     ]
     return (
         <div className="card" style={{ padding: '16px' }}>
@@ -320,46 +318,46 @@ function AlertasActivas({ crmData }) {
 // ═══ MERCADOS ═══
 const MERCADOS_DATA = (crmData) => [
     {
-        id: 'vietnam', bandera: '🇻🇳', nombre: 'Vietnam Gama',
-        subtitulo: 'Volumen · 10x · Distribuidores mayoristas',
-        color: '#e67e22', colorGlow: 'rgba(230,126,34,0.08)', colorBorder: 'rgba(230,126,34,0.25)',
-        etiqueta: 'Volumen', etiquetaColor: '#e67e22',
+        id: 'espana', bandera: '🇪🇸', nombre: 'España',
+        subtitulo: 'Mercado domestico — Creacion de categoria',
+        color: '#c0392b', colorGlow: 'rgba(192,57,43,0.08)', colorBorder: 'rgba(192,57,43,0.25)',
+        etiqueta: 'Activo', etiquetaColor: '#4ade80',
         kpis: [
-            { label: 'Leads Vietnam', valor: `${crmData.byGama?.vietnam || 0}`, meta: '→10+ 90d', semaforo: (crmData.byGama?.vietnam || 0) > 5 ? 'amarillo' : 'rojo' },
-            { label: 'Pipeline VN', valor: `€${(crmData.byGama?.vietnam || 0) * 5000}`, meta: '→€350K 2026', semaforo: 'verde' },
-            { label: 'Canal', valor: 'B2B', meta: 'Distrib+Congelados', semaforo: 'verde' },
-            { label: 'Ratio', valor: '10x', meta: 'vs Premium', semaforo: 'verde' },
+            { label: 'Facturacion/mes', valor: '€60K', meta: '→65K', semaforo: 'verde' },
+            { label: 'Clientes B2B', valor: `${crmData.total}`, meta: '→30+', semaforo: crmData.total > 10 ? 'amarillo' : 'rojo' },
+            { label: 'Distribuidores FR', valor: `${crmData.byMarket?.FR || 0}`, meta: '→2-3', semaforo: 'neutro' },
+            { label: 'Pipeline valor', valor: `€${(crmData.pipelineValue || 0).toLocaleString('es-ES')}`, meta: '→€410K', semaforo: crmData.pipelineValue > 100000 ? 'amarillo' : 'rojo' },
         ],
-        acciones: [{ texto: 'Identificar 20 distribuidores mayoristas + cadenas congelados' }],
-        progreso: Math.min(100, (crmData.byGama?.vietnam || 0) * 10), objetivo: '€350K (70%)', periodo: '2026',
-    },
-    {
-        id: 'premium', bandera: '⭐', nombre: 'Premium Gama',
-        subtitulo: 'Calidad · 1x · Distrib gourmet + restaurantes',
-        color: '#f1c40f', colorGlow: 'rgba(241,196,15,0.08)', colorBorder: 'rgba(241,196,15,0.25)',
-        etiqueta: 'Calidad', etiquetaColor: '#f1c40f',
-        kpis: [
-            { label: 'Leads Premium', valor: `${crmData.byGama?.premium || 0}`, meta: '→15+ 90d', semaforo: (crmData.byGama?.premium || 0) > 5 ? 'amarillo' : 'rojo' },
-            { label: 'Pipeline PM', valor: `€${(crmData.byGama?.premium || 0) * 3000}`, meta: '→€100K 2026', semaforo: 'amarillo' },
-            { label: 'Cliente', valor: 'Gourmet', meta: 'Rest>€40/cubierto', semaforo: 'verde' },
-            { label: 'Ratio', valor: '1x', meta: 'vs Vietnam', semaforo: 'verde' },
-        ],
-        acciones: [{ texto: 'Contactar distribuidores gourmet + restaurantes >€40/cubierto' }],
-        progreso: Math.min(100, (crmData.byGama?.premium || 0) * 6), objetivo: '€100K (20%)', periodo: '2026',
+        acciones: [{ texto: 'Activar CRM + primer post TOFU' }],
+        progreso: crmData.revenue?.pct || 0, objetivo: '€720K', periodo: '2026',
     },
     {
         id: 'francia', bandera: '🇫🇷', nombre: 'Francia',
-        subtitulo: 'Penetración · Mercado x20 · Premium + Despieces',
+        subtitulo: 'Penetracion — mercado x20 existente',
         color: '#2563eb', colorGlow: 'rgba(37,99,235,0.08)', colorBorder: 'rgba(37,99,235,0.25)',
-        etiqueta: 'Expansión', etiquetaColor: 'var(--brand)',
+        etiqueta: 'Expansion', etiquetaColor: 'var(--brand)',
         kpis: [
-            { label: 'Distribuidores FR', valor: `${crmData.byMarket?.FR || 0}`, meta: '→2-3 (12m)', semaforo: (crmData.byMarket?.FR || 0) > 0 ? 'amarillo' : 'rojo' },
-            { label: 'Potencial vs ES', valor: 'x20', meta: 'Mercado existente', semaforo: 'verde' },
-            { label: 'Producto clave', valor: 'Prem+Desp', meta: 'Formatos nuevos', semaforo: 'verde' },
-            { label: 'AquaPremium', valor: '🇫🇷', meta: 'Prod. local FR', semaforo: 'verde' },
+            { label: 'Distribuidores FR', valor: `${crmData.byMarket?.FR || 0}`, meta: '→2-3', semaforo: 'neutro' },
+            { label: 'Potencial vs ES', valor: 'x20', meta: 'Mercado', semaforo: 'verde' },
+            { label: 'Presupuesto 90d', valor: '€3-5K', meta: 'Aprobado', semaforo: 'amarillo' },
+            { label: 'Leads FR', valor: '0', meta: '→10+', semaforo: 'neutro' },
         ],
         acciones: [{ texto: 'Investigar Top 50 distribuidores FR + 30 restaurantes grenouille' }],
-        progreso: Math.min(100, (crmData.byMarket?.FR || 0) * 30), objetivo: '€50K Q4', periodo: '2026',
+        progreso: 8, objetivo: '€50K', periodo: 'Q4 2026',
+    },
+    {
+        id: 'petfood', bandera: '🐾', nombre: 'Petfood',
+        subtitulo: 'Nuevo mercado — innovacion pura',
+        color: '#7c3aed', colorGlow: 'rgba(124,58,237,0.08)', colorBorder: 'rgba(124,58,237,0.25)',
+        etiqueta: 'Exploracion', etiquetaColor: 'var(--accent)',
+        kpis: [
+            { label: 'Estado', valor: 'Pre-seed', meta: 'Piloto', semaforo: 'neutro' },
+            { label: 'Mercado EU', valor: '€18B', meta: 'Potencial', semaforo: 'verde' },
+            { label: 'Competidores', valor: '0', meta: 'Sin rival', semaforo: 'verde' },
+            { label: 'Clientes beta', valor: '0', meta: '3 marcas', semaforo: 'neutro' },
+        ],
+        acciones: [{ texto: 'Investigar requisitos proteina animal alternativa para petfood EU' }],
+        progreso: 5, objetivo: 'Piloto', periodo: '2027',
     },
 ]
 
@@ -435,7 +433,7 @@ export default function Dashboard({ cambiarVista }) {
                     <div>
                         <h1 className="page-title" style={{ marginBottom: '4px' }}>Centro de Mando CMO</h1>
                         <div className="page-subtitle" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                            <span>Grenoucerie S.L. · 4 Gamas</span>
+                            <span>Grenoucerie S.L.</span>
                             <span style={{ color: 'var(--text-faint)' }}>·</span>
                             <span style={{ textTransform: 'capitalize' }}>{today}</span>
                             {crmData.connected && <span style={{ fontSize: '9px', padding: '2px 6px', borderRadius: '10px', background: 'var(--ok-bg)', color: 'var(--ok)', border: '1px solid var(--ok)33', fontFamily: 'DM Mono, monospace' }}>● Supabase LIVE</span>}
@@ -452,40 +450,16 @@ export default function Dashboard({ cambiarVista }) {
             <AlertaStrip crmData={crmData} />
             <SupergoBar crmData={crmData} />
 
-            {/* GAMAS BAR */}
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '8px', marginBottom: '20px' }}>
-                {[
-                    { id: 'vietnam',   flag: '🇻🇳', label: 'Vietnam',   sub: 'Volumen · 10x',   color: '#e67e22', icon: '📦' },
-                    { id: 'premium',   flag: '⭐', label: 'Premium',   sub: 'Calidad · 1x',    color: '#f1c40f', icon: '🏆' },
-                    { id: 'club',      flag: '👑', label: 'Club/Fresca', sub: 'Exclusiva · 0.1x', color: '#e74c3c', icon: '🔒' },
-                    { id: 'despieces', flag: '🔪', label: 'Despieces', sub: 'Innovación · NEW', color: '#1abc9c', icon: '✨' },
-                ].map(g => (
-                    <div key={g.id} style={{ padding: '10px 14px', background: `${g.color}0a`, border: `1px solid ${g.color}22`, borderRadius: 'var(--radius-sm)' }}>
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '4px' }}>
-                            <span style={{ fontSize: '14px' }}>{g.flag}</span>
-                            <span style={{ fontSize: '10px', fontWeight: 700, color: g.color, fontFamily: 'Space Grotesk, sans-serif' }}>{g.label}</span>
-                        </div>
-                        <div style={{ fontSize: '8px', color: 'var(--text-muted)', fontFamily: 'DM Mono, monospace', marginBottom: '4px' }}>{g.sub}</div>
-                        <div style={{ fontSize: '10px', color: 'var(--text-faint)', fontFamily: 'DM Mono, monospace' }}>
-                                    {crmData.byGama && crmData.byGama[g.id] !== undefined
-                                        ? `${crmData.byGama[g.id]} leads`
-                                        : '—'}
-                                </div>
-                    </div>
-                ))}
-            </div>
-
             {/* KPIs principales */}
             <div style={{ display: 'flex', gap: '10px', overflowX: 'auto', marginBottom: '20px', paddingBottom: '2px' }}>
-                <KpiTile label="Facturación mensual" value="€60K" sub="meta €65K 90d" color="var(--ok)" pulse />
-                <KpiTile label="Leads Vietnam" value={String(crmData.byGama?.vietnam || 0)} sub="meta 10+ 90d" color="#e67e22" />
-                <KpiTile label="Leads Premium" value={String(crmData.byGama?.premium || 0)} sub="meta 15+ 90d" color="#f1c40f" />
-                <KpiTile label="Leads Despieces" value={String(crmData.byGama?.despieces || 0)} sub="meta 5+ 90d" color="#1abc9c" />
-                <KpiTile label="Leads B2B total" value={String(crmData.total)} sub="meta 50+ 90d" color={crmData.total > 0 ? 'var(--ok)' : 'var(--alert)'} pulse />
-                <KpiTile label="Pipeline valor" value={`€${(crmData.pipelineValue || 0).toLocaleString('es-ES')}`} sub="meta €410K" color="var(--brand)" pulse />
-                <KpiTile label="Deals activos" value={String(crmData.deals?.length || 0)} sub="en negociación" color={crmData.deals?.length > 0 ? 'var(--ok)' : 'var(--warn)'} />
-                <KpiTile label="Distrib. FR" value={String(crmData.byMarket?.FR || 0)} sub="meta 2-3 (12m)" color="var(--brand)" />
-                <KpiTile label="Alertas" value={String((crmData.alerts?.length || 0) + (crmData.byMarket?.FR === 0 ? 1 : 0))} sub="pendientes" color={crmData.alerts?.length > 0 ? 'var(--alert)' : 'var(--ok)'} />
+                <KpiTile label="Facturacion mensual" value="€60K" sub="meta €65K 90d" color="var(--ok)" pulse />
+                <KpiTile label="Facturacion 2025" value="€379K" sub="+87% vs baseline" color="var(--brand)" pulse />
+                <KpiTile label="Run rate 2026" value="€720K" sub="proyeccion anual" color="var(--ok)" pulse />
+                <KpiTile label="Distribuidores" value={String(crmData.total)} sub="en CRM" color={crmData.total > 0 ? 'var(--ok)' : 'var(--alert)'} pulse />
+                <KpiTile label="Pipeline valor" value={`€${(crmData.pipelineValue || 0).toLocaleString('es-ES')}`} sub="deals + distribuidores" color="var(--brand)" pulse />
+                <KpiTile label="Deals activos" value={String(crmData.deals?.length || 0)} sub="en negociacion" color={crmData.deals?.length > 0 ? 'var(--ok)' : 'var(--warn)'} pulse />
+                <KpiTile label="Actividades" value={String(crmData.activities?.length || 0)} sub="registradas" color="var(--text-muted)" pulse />
+                <KpiTile label="Alertas" value={String(crmData.alerts?.length || Object.values(crmData.byStage || {}).filter((v,i) => i > 2 && v === 0).length)} sub="pendientes" color={crmData.alerts?.length > 0 ? 'var(--alert)' : 'var(--ok)'} pulse />
             </div>
 
             {/* Embudo + Pipeline */}

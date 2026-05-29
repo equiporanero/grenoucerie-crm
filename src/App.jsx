@@ -4,39 +4,38 @@ import Dashboard from './components/Dashboard/Dashboard'
 import './index.css'
 
 // Lazy load — solo se cargan cuando se usan
-const Francia = lazy(() => import('./components/Francia/Francia'))
-const RRSS = lazy(() => import('./components/RRSS/RRSS'))
-const RevenueTracker = lazy(() => import('./components/RevenueTracker/RevenueTracker'))
-const OutboundEngine = lazy(() => import('./components/Outbound/OutboundEngine'))
+const Pipeline = lazy(() => import('./components/Pipeline/Pipeline'))
 const AgentDashboard = lazy(() => import('./components/Agents/AgentDashboard'))
 const CalculadoraMargenes = lazy(() => import('./components/Calculadora/CalculadoraMargenes'))
-const Petfood = lazy(() => import('./components/Petfood/Petfood'))
-const Stack = lazy(() => import('./components/Stack/Stack'))
-const Prompt = lazy(() => import('./components/Prompt/Prompt'))
-const Roadmap = lazy(() => import('./components/Roadmap/Roadmap'))
-const Conexiones = lazy(() => import('./components/Conexiones/Conexiones'))
-const Chatwoot = lazy(() => import('./components/Chatwoot/Chatwoot'))
+const OutboundEngine = lazy(() => import('./components/Outbound/OutboundEngine'))
+const RevenueTracker = lazy(() => import('./components/RevenueTracker/RevenueTracker'))
+const RRSS = lazy(() => import('./components/RRSS/RRSS'))
+const Francia = lazy(() => import('./components/Francia/Francia'))
 const Contenidos = lazy(() => import('./components/Contenidos/Contenidos'))
-const Funnel = lazy(() => import('./components/Funnel/Funnel'))
-const Pipeline = lazy(() => import('./components/Pipeline/Pipeline'))
+const Roadmap = lazy(() => import('./components/Roadmap/Roadmap'))
+const Prompt = lazy(() => import('./components/Prompt/Prompt'))
+const Conexiones = lazy(() => import('./components/Conexiones/Conexiones'))
+const Stack = lazy(() => import('./components/Stack/Stack'))
 
 const VISTAS = {
     dashboard:      Dashboard,
-    funnel:         Funnel,
+    funnel:         Dashboard,  // deprecated — redirect a Dashboard
     pipeline:       Pipeline,
     contenidos:     Contenidos,
     roadmap:        Roadmap,
     francia:        Francia,
-    petfood:        Petfood,
+    espana:         Dashboard,
+    petfood:        Dashboard,
     conexiones:     Conexiones,
-    rrss:           RRSS,
-    revenuetracker: RevenueTracker,
-    outbound:       OutboundEngine,
     agents:         AgentDashboard,
     calculadora:    CalculadoraMargenes,
-    stack:          Stack,
+    outbound:       OutboundEngine,
+    revenuetracker: RevenueTracker,
+    rrss:           RRSS,
     prompt:         Prompt,
-    chatwoot:       Chatwoot,
+    stack:          Stack,
+    brightbean:     RRSS,
+    chatwoot:       RRSS,
 }
 
 const LoadingView = () => (
