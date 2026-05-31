@@ -186,7 +186,7 @@ function SupergoBar({ crmData }) {
 function AccionesSemanales({ crmData }) {
     const acciones = [
         { color: 'var(--alert)', icono: '🔴', accion: 'Cargar 50 leads PYMES asiáticos FR en CRM (json listo)', deadline: 'HOY' },
-        { color: 'var(--alert)', icono: '🔴', accion: 'Primer contacto: Ô Marché d'Asie + Direct Asia Food (teléfono + email)', deadline: 'Esta semana' },
+        { color: 'var(--alert)', icono: '🔴', accion: `Primer contacto: Marche Asie + Direct Asia Food (telefono + email)`, deadline: 'Esta semana' },
         { color: 'var(--warn)', icono: '🟡', accion: 'Fausti: enviar Touch 1 email a 3 distribuidores Costa Azul', deadline: 'Semana 1' },
         { color: 'var(--warn)', icono: '🟡', accion: 'Touch 4: follow-up sin respuesta (3 emails)', deadline: 'Semana 2' },
         { color: 'var(--ok)', icono: '🟢', accion: 'Negociar primer pedido muestra (500kg)', deadline: 'Semana 3-4' },
@@ -342,7 +342,7 @@ const MERCADOS_DATA = (crmData) => [
             { label: 'Presupuesto', valor: '€0-400/mes', meta: 'Bootstrap', semaforo: 'amarillo' },
             { label: 'Track', valor: 'Vietnam 10t', meta: 'IFS cert.', semaforo: 'verde' },
         ],
-        acciones: [{ texto: 'Prioridad A: Ô Marché d'Asie, Direct Asia Food, Terr'Asia, Hoa Nam, Euro Asie. Sin grandes superficies.' }],
+        acciones: [{ texto: `Prioridad A: Marche Asie, Direct Asia Food, TerraAsia, Hoa Nam. Sin grandes superficies.` }],
         progreso: 8, objetivo: '€500K', periodo: 'Q4 2026',
     },
     {
