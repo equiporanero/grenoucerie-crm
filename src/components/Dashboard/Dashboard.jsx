@@ -185,11 +185,11 @@ function SupergoBar({ crmData }) {
 // ═══ ACCIONES SEMANALES ═══
 function AccionesSemanales({ crmData }) {
     const acciones = [
-        { color: 'var(--alert)', icono: '🔴', accion: 'Cargar distribuidores reales en CRM (HubSpot o Supabase)', deadline: 'HOY' },
-        { color: 'var(--alert)', icono: '🔴', accion: `Publicar primer post TOFU: "¿Conoces la carne más saludable del mundo?"`, deadline: 'Esta semana' },
-        { color: 'var(--warn)', icono: '🟡', accion: 'Construir lista 50 targets: 20 Vietnam + 20 Premium + 10 restaurantes', deadline: 'Semana 2' },
-        { color: 'var(--warn)', icono: '🟡', accion: 'Activar LinkedIn: 0 posts, 0 impresiones. Meta: 10K/mes', deadline: 'Semana 2' },
-        { color: 'var(--ok)', icono: '🟢', accion: 'Publicar tabla nutricional rana vs carnes en web', deadline: 'Semana 3' },
+        { color: 'var(--alert)', icono: '🔴', accion: 'Cargar 50 leads PYMES asiáticos FR en CRM (json listo)', deadline: 'HOY' },
+        { color: 'var(--alert)', icono: '🔴', accion: 'Primer contacto: Ô Marché d'Asie + Direct Asia Food (teléfono + email)', deadline: 'Esta semana' },
+        { color: 'var(--warn)', icono: '🟡', accion: 'Fausti: enviar Touch 1 email a 3 distribuidores Costa Azul', deadline: 'Semana 1' },
+        { color: 'var(--warn)', icono: '🟡', accion: 'Touch 4: follow-up sin respuesta (3 emails)', deadline: 'Semana 2' },
+        { color: 'var(--ok)', icono: '🟢', accion: 'Negociar primer pedido muestra (500kg)', deadline: 'Semana 3-4' },
     ]
     return (
         <div className="card" style={{ padding: '16px' }}>
@@ -333,17 +333,17 @@ const MERCADOS_DATA = (crmData) => [
     },
     {
         id: 'francia', bandera: '🇫🇷', nombre: 'Francia',
-        subtitulo: 'Penetracion — mercado x20 existente',
+        subtitulo: 'Vietnam 10t — PYMES asiáticos, canal HORECA',
         color: '#2563eb', colorGlow: 'rgba(37,99,235,0.08)', colorBorder: 'rgba(37,99,235,0.25)',
-        etiqueta: 'Expansion', etiquetaColor: 'var(--brand)',
+        etiqueta: 'Activo', etiquetaColor: 'var(--brand)',
         kpis: [
-            { label: 'Distribuidores FR', valor: `${crmData.byMarket?.FR || 0}`, meta: '→2-3', semaforo: 'neutro' },
-            { label: 'Potencial vs ES', valor: 'x20', meta: 'Mercado', semaforo: 'verde' },
-            { label: 'Presupuesto 90d', valor: '€3-5K', meta: 'Aprobado', semaforo: 'amarillo' },
-            { label: 'Leads FR', valor: '0', meta: '→10+', semaforo: 'neutro' },
+            { label: 'Distribuidores PYMES', valor: `${crmData.byMarket?.FR || 0}`, meta: '→50 leads', semaforo: 'neutro' },
+            { label: 'Responsable', valor: 'Fausti', meta: 'Comercial 100%', semaforo: 'verde' },
+            { label: 'Presupuesto', valor: '€0-400/mes', meta: 'Bootstrap', semaforo: 'amarillo' },
+            { label: 'Track', valor: 'Vietnam 10t', meta: 'IFS cert.', semaforo: 'verde' },
         ],
-        acciones: [{ texto: 'Investigar Top 50 distribuidores FR + 30 restaurantes grenouille' }],
-        progreso: 8, objetivo: '€50K', periodo: 'Q4 2026',
+        acciones: [{ texto: 'Prioridad A: Ô Marché d'Asie, Direct Asia Food, Terr'Asia, Hoa Nam, Euro Asie. Sin grandes superficies.' }],
+        progreso: 8, objetivo: '€500K', periodo: 'Q4 2026',
     },
     {
         id: 'petfood', bandera: '🐾', nombre: 'Petfood',
