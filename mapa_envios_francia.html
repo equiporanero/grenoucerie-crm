@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GRENOUCERIE FR — Mapa de Envíos</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #0a0a0a; color: #fff; padding: 20px; }
+  h1 { text-align: center; font-size: 28px; margin-bottom: 5px; color: #00ff88; }
+  .subtitle { text-align: center; font-size: 14px; color: #888; margin-bottom: 30px; }
+  .map-container { display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; }
+  
+  /* SVG Map */
+  .map-wrapper { position: relative; }
+  .map-wrapper svg { width: 500px; height: 500px; }
+  
+  .region { fill: #1a1a2e; stroke: #333; stroke-width: 1.5; cursor: pointer; transition: all 0.3s; }
+  .region:hover { fill: #16213e; stroke: #00ff88; stroke-width: 2; }
+  .region.enviado { fill: #0a3d0a; stroke: #00ff88; stroke-width: 2; }
+  .region.enviado:hover { fill: #0d4d0d; }
+  .region.pendiente { fill: #1a1a2e; stroke: #ff6b35; stroke-width: 1.5; }
+  .region.pendiente:hover { fill: #2a1a1e; }
+  .region.error { fill: #3d0a0a; stroke: #ff3333; stroke-width: 1.5; }
+  
+  .region-label { font-size: 10px; fill: #aaa; pointer-events: none; font-weight: bold; }
+  .region-icon { font-size: 14px; pointer-events: none; }
+  
+  /* Legend */
+  .legend { margin-top: 20px; display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
+  .legend-item { display: flex; align-items: center; gap: 8px; font-size: 13px; }
+  .legend-dot { width: 14px; height: 14px; border-radius: 3px; }
+  .dot-enviado { background: #0a3d0a; border: 2px solid #00ff88; }
+  .dot-pendiente { background: #1a1a2e; border: 1.5px solid #ff6b35; }
+  .dot-error { background: #3d0a0a; border: 1.5px solid #ff3333; }
+  
+  /* Detail table */
+  .detail-table { margin-top: 30px; width: 100%; max-width: 900px; margin-left: auto; margin-right: auto; }
+  .detail-table h2 { font-size: 18px; color: #00ff88; margin-bottom: 15px; text-align: center; }
+  table { width: 100%; border-collapse: collapse; font-size: 12px; }
+  th { background: #1a1a2e; color: #00ff88; padding: 10px 8px; text-align: left; border-bottom: 2px solid #00ff88; }
+  td { padding: 8px; border-bottom: 1px solid #222; }
+  tr:hover { background: #111; }
+  .status-si { color: #00ff88; font-weight: bold; }
+  .status-no { color: #ff6b35; }
+  .status-err { color: #ff3333; }
+  .row-enviado { background: #0a1a0a; }
+  .row-pendiente { }
+  .row-error { background: #1a0a0a; }
+  
+  .stats { display: flex; justify-content: center; gap: 40px; margin: 20px 0; flex-wrap: wrap; }
+  .stat-box { text-align: center; padding: 15px 25px; background: #111; border-radius: 8px; border: 1px solid #222; }
+  .stat-num { font-size: 28px; font-weight: bold; color: #00ff88; }
+  .stat-label { font-size: 11px; color: #888; margin-top: 4px; }
+</style>
+</head>
+<body>
+
+<h1>🐸 GRENOUCERIE FR — Mapa de Envíos</h1>
+<p class="subtitle">Estado de la campaña de emailing a distribuidores asiáticos en Francia — 01/06/2026</p>
+
+<div class="stats">
+  <div class="stat-box">
+    <div class="stat-num">51</div>
+    <div class="stat-label">LEADS TOTALES</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-num" style="color:#00ff88">13</div>
+    <div class="stat-label">CON EMAIL DIRECTO</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-num" style="color:#ff6b35">38</div>
+    <div class="stat-label">FORMULARIO WEB</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-num" style="color:#00ff88">2</div>
+    <div class="stat-label">FORMULARIOS ENVIADOS</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-num" style="color:#ff3333">1</div>
+    <div class="stat-label">ERROR SERVIDOR</div>
+  </div>
+</div>
+
+<div class="map-container">
+  <div class="map-wrapper">
+    <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+      <!-- Francia simplificada por regiones -->
+      
+      <!-- CORSE -->
+      <path class="region pendiente" d="M420,420 L440,400 L460,410 L450,440 L430,450 Z" onclick="showDetail('corse')"/>
+      <text x="440" y="428" class="region-label">CORSE</text>
+      <text x="440" y="440" class="region-icon">❌</text>
+      
+      <!-- PACA -->
+      <path class="region enviado" d="M340,340 L380,320 L400,340 L390,370 L360,380 L340,360 Z" onclick="showDetail('paca')"/>
+      <text x="365" y="350" class="region-label">PACA</text>
+      <text x="365" y="365" class="region-icon">✅</text>
+      
+      <!-- OCCITANIE -->
+      <path class="region pendiente" d="M240,340 L280,320 L320,340 L310,380 L270,390 L240,370 Z" onclick="showDetail('occitanie')"/>
+      <text x="275" y="355" class="region-label">OCCITANIE</text>
+      <text x="275" y="370" class="region-icon">⬜</text>
+      
+      <!-- AUVERGNE -->
+      <path class="region pendiente" d="M260,240 L300,220 L330,240 L320,270 L280,280 L260,260 Z" onclick="showDetail('auvergne')"/>
+      <text x="290" y="250" class="region-label">AUVERGNE</text>
+      <text x="290" y="265" class="region-icon">⬜</text>
+      
+      <!-- RHONE-ALPES -->
+      <path class="region enviado" d="M300,200 L340,180 L370,200 L360,240 L320,250 L300,230 Z" onclick="showDetail('rha')"/>
+      <text x="330" y="215" class="region-label">RHÔNE-ALPES</text>
+      <text x="330" y="230" class="region-icon">✅</text>
+      
+      <!-- CENTRE -->
+      <path class="region pendiente" d="M220,160 L260,140 L290,160 L280,190 L240,200 L220,180 Z" onclick="showDetail('centre')"/>
+      <text x="250" y="170" class="region-label">CENTRE</text>
+      <text x="250" y="185" class="region-icon">⬜</text>
+      
+      <!-- IDF -->
+      <path class="region enviado" d="M240,110 L270,90 L300,110 L290,140 L260,150 L240,130 Z" onclick="showDetail('idf')"/>
+      <text x="265" y="118" class="region-label">IDF</text>
+      <text x="265" y="133" class="region-icon">✅</text>
+      
+      <!-- HAUTS-DE-FRANCE -->
+      <path class="region pendiente" d="M240,40 L280,20 L310,40 L300,70 L260,80 L240,60 Z" onclick="showDetail('hdf')"/>
+      <text x="270" y="50" class="region-label">HAUTS-DE-FRANCE</text>
+      <text x="270" y="65" class="region-icon">⬜</text>
+      
+      <!-- NORMANDIE -->
+      <path class="region pendiente" d="M160,60 L200,40 L230,60 L220,100 L180,110 L160,90 Z" onclick="showDetail('normandie')"/>
+      <text x="195" y="75" class="region-label">NORMANDIE</text>
+      <text x="195" y="90" class="region-icon">⬜</text>
+      
+      <!-- BRETAGNE -->
+      <path class="region pendiente" d="M80,100 L130,80 L160,100 L150,140 L100,150 L80,130 Z" onclick="showDetail('bretagne')"/>
+      <text x="115" y="115" class="region-label">BRETAGNE</text>
+      <text x="115" y="130" class="region-icon">⬜</text>
+      
+      <!-- PAYS DE LA LOIRE -->
+      <path class="region pendiente" d="M140,140 L180,120 L210,140 L200,180 L160,190 L140,170 Z" onclick="showDetail('pdl')"/>
+      <text x="170" y="155" class="region-label">PAYS DE LA LOIRE</text>
+      <text x="170" y="170" class="region-icon">⬜</text>
+      
+      <!-- AQUITAINE -->
+      <path class="region pendiente" d="M160,260 L200,240 L240,260 L230,300 L190,310 L160,290 Z" onclick="showDetail('aquitaine')"/>
+      <text x="195" y="275" class="region-label">AQUITAINE</text>
+      <text x="195" y="290" class="region-icon">⬜</text>
+      
+      <!-- LORRAINE -->
+      <path class="region enviado" d="M320,80 L360,60 L390,80 L380,120 L340,130 L320,110 Z" onclick="showDetail('lorraine')"/>
+      <text x="350" y="95" class="region-label">LORRAINE</text>
+      <text x="350" y="110" class="region-icon">✅</text>
+      
+      <!-- ALSACE (parte de Lorraine) -->
+      <!-- FRANCHE-COMTE (parte de RA) -->
+      
+      <!-- Labels for regions without detail -->
+      <text x="170" y="155" class="region-label" font-size="8">PAYS DE LA LOIRE</text>
+    </svg>
+    
+    <div class="legend">
+      <div class="legend-item"><div class="legend-dot dot-enviado"></div> ✅ Email/Formulario enviado</div>
+      <div class="legend-item"><div class="legend-dot dot-pendiente"></div> ⬜ Pendiente</div>
+      <div class="legend-item"><div class="legend-dot dot-error"></div> ❌ Error servidor</div>
+    </div>
+  </div>
+</div>
+
+<!-- Detail Table -->
+<div class="detail-table">
+  <h2>📋 Detalle por Región</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Región</th>
+        <th>Leads</th>
+        <th>Email Directo</th>
+        <th>Formulario Web</th>
+        <th>Estado</th>
+        <th>Empresas contactadas</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- ENVIADOS -->
+      <tr class="row-enviado">
+        <td><strong>Île-de-France</strong></td>
+        <td>8</td>
+        <td>3</td>
+        <td>5</td>
+        <td class="status-si">✅ ENVIADO</td>
+        <td>Tai-Yat (email), Hoa Nam (email), Best China Food (email)</td>
+      </tr>
+      <tr class="row-enviado">
+        <td><strong>Rhône-Alpes</strong></td>
+        <td>8</td>
+        <td>1</td>
+        <td>6</td>
+        <td class="status-si">✅ ENVIADO</td>
+        <td>Dogal Food (formulario enviado)</td>
+      </tr>
+      <tr class="row-enviado">
+        <td><strong>PACA</strong></td>
+        <td>8</td>
+        <td>2</td>
+        <td>4</td>
+        <td class="status-si">✅ ENVIADO</td>
+        <td>Ô Marché d'Asie (email), Direct Asia Food (email)</td>
+      </tr>
+      <tr class="row-enviado">
+        <td><strong>Lorraine</strong></td>
+        <td>4</td>
+        <td>1</td>
+        <td>1</td>
+        <td class="status-si">✅ ENVIADO</td>
+        <td>Yijia France (email)</td>
+      </tr>>
+      <tr class="row-error">
+        <td><strong>Rhône-Alpes</strong></td>
+        <td>—</td>
+        <td>—</td>
+        <td>1</td>
+        <td class="status-err">❌ ERROR</td>
+        <td>Ceres Distribution (formulario - error servidor mail_failed)</td>
+      </tr>
+      
+      <!-- PENDIENTES -->
+      <tr class="row-pendiente">
+        <td>Normandie</td>
+        <td>3</td>
+        <td>0</td>
+        <td>1</td>
+        <td class="status-no">⬜ Pendiente</td>
+        <td>Exotic Market, SAS F&A, Euro-Asie Rouen</td>
+      </tr>
+      <tr class="row-pendiente">
+        <td>Aquitaine</td>
+        <td>4</td>
+        <td>1</td>
+        <td>1</td>
+        <td class="status-no">⬜ Pendiente</td>
+        <td>Food Asie (email), Sakura Diffusion, Mimport</td>
+      </tr>
+      <tr class="row-pendiente">
+        <td>Occitanie</td>
+        <td>4</td>
+        <td>0</td>
+        <td>3</td>
+        <td class="status-no">⬜ Pendiente</td>
+        <td>Sobraquès, Asia Food Toulouse, Chefcook</td>
+      </tr>
+      <tr class="row-pendiente">
+        <td>Bretagne</td>
+        <td>3</td>
+        <td>0</td>
+        <td>1</td>
+        <td class="status-no">⬜ Pendiente</td>
+        <td>Tallat, Kenty, Asia Import</td>
+      </tr>
+      <tr class="row-pendiente">
+        <td>Hauts-de-France</td>
+        <td>4</td>
+        <td>0</td>
+        <td>2</td>
+        <td class="status-no">⬜ Pendiente</td>
+        <td>Candy Market, Synapse Global Trade</td>
+      </tr>
+      <tr class="row-pendiente">
+        <td>Centre</td>
+        <td>2</td>
+        <td>0</td>
+        <td>1</td>
+        <td class="status-no">⬜ Pendiente</td>
+        <td>Asialiment Tours, Oriental Distribution</td>
+      </tr>
+      <tr class="row-pendiente">
+        <td>Auvergne</td>
+        <td>2</td>
+        <td>0</td>
+        <td>1</td>
+        <td class="status-no">⬜ Pendiente</td>
+        <td>Asia Distribution Clermont</td>
+      </tr>
+      <tr class="row-pendiente">
+        <td>Corse</td>
+        <td>2</td>
+        <td>0</td>
+        <td>1</td>
+        <td class="status-no">⬜ Pendiente</td>
+        <td>Ô Marché d'Asie Corse, SODISPRO</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div style="text-align:center; margin-top:30px; color:#666; font-size:11px;">
+  Generado por OWL — Hermes Agent — 01/06/2026 09:00 CEST
+</div>
+
+</body>
+</html>

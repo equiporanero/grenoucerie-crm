@@ -1,1 +1,0 @@
-{"version":3,"sources":["../../../../../src/engine/api/mcp/constants/mcp-protocol-version.const.ts"],"sourcesContent":["export const MCP_PROTOCOL_VERSION = '2025-06-18';\n"],"names":["MCP_PROTOCOL_VERSION"],"mappings":";;;;+BAAaA;;;eAAAA;;;AAAN,MAAMA,uBAAuB"}

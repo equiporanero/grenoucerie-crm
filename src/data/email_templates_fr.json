@@ -1,42 +1,52 @@
 {
   "metadata": {
-    "autor": "OWL → para revisión humana ANTES de enviar",
-    "idioma": "Francés (revisar por nativo)",
+    "autor": "OWL — revisado por Fabio 2026-06-01",
+    "idioma": "Francés (revisar por nativo ANTES de enviar)",
     "objetivo": "Primer contacto distribuidores PYMES asiáticos Francia — Vietnam 10t",
-    "envío": "NO ENVIAR SIN APROBACIÓN DE FAUSTI"
+    "envío": "NO ENVIAR SIN APROBACIÓN DE FAUSTI",
+    "datos_producto": {
+      "producto": "Cuisses de grenouille (ancas de rana) — belly on",
+      "origen": "España (importador)",
+      "envase": "Caja 850g neto / 1kg bruto",
+      "pallets": "500kg",
+      "precio": "7.35€/kg bruto",
+      "certificacion": "APPCC + normativa UE completa",
+      "disponibilidad": "10 toneladas/mes"
+    }
   },
   "secuencia": {
     "touch_1": {
-      "nombre": "Email frío — Introducción",
+      "nombre": "Email frío — PRECIO + Volumen",
       "timing": "Día 1",
-      "asunto": "Grenoucerie — Proteína de rana vietnamita certificada IFS, 10 toneladas disponibles",
-      "cuerpo": "Bonjour [NOM],\n\nJe me permets de vous contacter car nous travaillons avec des grossistes asiatiques en France sur un produit de spécialité vietnamienne : des cuisses de grenouille surgelées, calibre 8/12, certifiées IFS.\n\nNotre partenaire de production au Vietnam peut fournir 10 tonnes mensuelles, avec une qualité constante toute l'année.\n\n Seriez-vous ouvert(e) à recevoir un échantillon et notre fiche produit ?\n\nCordialement,\nFausti\nGrenoucerie S.L.\ninfo@grenoucerie.com\n+34 [móvil Fausti]",
-      "objecion_esperada": "No conocen el producto / No trabajan protección",
-      "respuesta_objecion": "Entendemos que es un producto nuevo en Francia. Nuestro objetivo es que distribuya sin riesgo: muestra gratuita, sin mínimo de pedido inicial. Solo si vende, repite."
+      "asunto": "Cuisses de grenouille España — 7.35€/kg, 10 tonnes/mois, APPCC",
+      "cuerpo": "Bonjour [NOM],\n\nJe suis Fausti, commercial chez Grenoucerie. Nous sommes importateurs de cuisses de grenouille (belly on) depuis l'Espagne.\n\nNotre offre :\n\n— Prix : 7.35€/kg brut\n— Conditionnement : cartons 1kg brut (850g neto)\n— Palettes : 500kg\n— Certification : APPCC + normativa UE complète\n— Disponibilité : 10 tonnes/mois\n\nNous cherchons un distributeur exclusif pour la France.\n\nIntéressé(e) ? Je vous envoie la fiche technique et un échantillon.\n\nCordialement,\nFausti\nGrenoucerie S.L.\ninfo@grenoucerie.com\nWhatsApp: +34 [móvil Fausti]",
+      "objecion_esperada": "Ya tienen proveedor / Precio no les interesa",
+      "respuesta_objecion": "Entendido. Solo le pido que compare con su proveedor actual. Si nuestro precio le interesa, échantillon gratuit sans engagement."
     },
     "touch_2": {
-      "nombre": "Follow-up — Precio y ventajas",
+      "nombre": "Follow-up — Margen + Muestra",
       "timing": "Día 4",
-      "asunto": "Re: Grenoucerie — Cuisses de grenouille vietnamita IFS (+ info prix)",
-      "cuerpo": "Bonjour [NOM],\n\nJe me permets de revenir vers vous rapidement.\n\nNotre prix FOB Vietnam est compétitif (détail sur demande), et le produit présente des avantages concrets :\n\n— Certification IFS (International Featured Standards)\n— Calibre régulier 8/12, idéal pour la restauration\n— Disponibilité 12 mois/an\n— Stock disponible 10 tonnes/mois\n\nNous cherchons des partenaires distributeurs en France pour un accord exclusif par zone.\n\nSeriez-vous disponible pour un échange de 10 minutes cette semaine ?\n\nBonne journée,\nFausti\nGrenoucerie S.L.",
-      "objecion_esperada": "Precio demasiado alto / No conocen la demanda",
-      "respuesta_objecion": "El precio se ajusta por volumen. empezamos con 1 test de 500kg para que valore la calidad. La demanda existe: la rana es producto habitual en restaurantes chinos y asiáticos del sur de Francia."
+      "asunto": "Re: Cuisses de grenouille — Échantillon 500kg gratuit + exclusivité",
+      "cuerpo": "Bonjour [NOM],\n\nJe reviens vers vous.\n\nNotre prix est 7.35€/kg brut. C'est compétitif pour du belly on certifié UE.\n\nL'échantillon de 500kg est gratuit. Vous testez, vous vendez, vous répétez.\n\nNous offrons aussi l'exclusivité territoriale au premier distributeur qui prend position.\n\nIntéressé(e) ?\n\nFausti\nGrenoucerie S.L.\nWhatsApp: +34 [móvil Fausti]",
+      "objecion_esperada": "Quieren ver muestra primero / Necesitan más info",
+      "respuesta_objecion": "Parfait. Je vous envoie l'échantillon dès que j'ai votre adresse. 500kg, sans frais."
     },
     "touch_3": {
       "nombre": "Último intento — Exclusividad",
       "timing": "Día 8",
-      "asunto": "Dernière proposition — Exclusivité cuisses de grenouille IFS, Côte d'Azur",
-      "cuerpo": "Bonjour [NOM],\n\nJ'imagine que vous êtes très sollicité. Je vous écris une dernière fois car je pense qu'il y a une vraie opportunité.\n\nNous proposons l'exclusivité territoriale à notre premier distributeur partenaire sur la Côte d'Azur (ou votre zone).\n\nMarché : 80-150 restaurants chinois/asiatiques dans la zone.\nProduit : Cuisses de grenouille surgelées, calibre 8/12, IFS.\nInvestissement initial : 0€ (échantillon offert).\n\nSi cela ne vous intéresse pas, pas de problème — dites-le-moi simplement et je ne vous relancerai plus.\n\nMerci pour votre temps,\nFausti\nGrenoucerie S.L.",
-      "objecion_esperada": "Silencio / No responde",
-      "respuesta_objecion": "Si no responde al 3er touch, marcar como 'no interesado' y pasar al siguiente lead."
+      "asunto": "Dernière relance — Exclusivité France + échantillon en attente",
+      "cuerpo": "Bonjour [NOM],\n\nDernière relance.\n\nNous offrons l'exclusivité territoriale au premier distributeur qui prend position.\n\n— Prix : 7.35€/kg brut\n— Échantillon 500kg gratuit\n— 10 tonnes/mois disponibles\n— APPCC + normativa UE\n\nSi ça ne vous intéresse pas, répondez-moi 'non' et je ne vous relance plus.\n\nMerci,\nFausti\nGrenoucerie S.L.\nWhatsApp: +34 [móvil Fausti]",
+      "objecion_esperada": "Silencio / No interesa",
+      "respuesta_objecion": "Si no responde al 3er touch, marcar como 'no interesado'."
     }
   },
   "notas_para_fausti": [
     "SIEMPRE personalizar con el nombre de la empresa",
-    "NO mencionar España — el producto es Vietnam, la marca es Grenoucerie",
+    "El argumento principal es PRECIO: 7.35€/kg brut",
     "Responder en francés o inglés (nunca español al primer contacto)",
-    "Si responden positivo → enviar ficha técnica + pedido mínimo",
-    "Si piden muestra → coordinar envío (coste muestra: ~50€, deducible del primer pedido)",
-    "Registrar CADA contacto en Google Sheet tracking"
+    "Si responden positivo → enviar ficha técnica + coordinar muestra 500kg",
+    "Registrar CADA contacto en Google Sheet tracking el mismo día",
+    "WhatsApp es el canal preferido para seguimiento",
+    "Tono: directo, comercial, sin rodeos"
   ]
 }

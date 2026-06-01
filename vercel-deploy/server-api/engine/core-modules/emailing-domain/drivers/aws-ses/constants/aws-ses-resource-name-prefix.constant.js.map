@@ -1,1 +1,0 @@
-{"version":3,"sources":["../../../../../../../src/engine/core-modules/emailing-domain/drivers/aws-ses/constants/aws-ses-resource-name-prefix.constant.ts"],"sourcesContent":["export const AWS_SES_RESOURCE_NAME_PREFIX = 'twenty-workspace';\n"],"names":["AWS_SES_RESOURCE_NAME_PREFIX"],"mappings":";;;;+BAAaA;;;eAAAA;;;AAAN,MAAMA,+BAA+B"}

@@ -1,0 +1,12 @@
+node_modules
+.git
+twenty
+main
+vercel-deploy
+Gotomarket
+grenoucerie-agents
+dashboard
+*.md
+sql
+scripts
+supabase-*.sql

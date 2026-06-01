@@ -1,1 +1,0 @@
-{"version":3,"sources":["../../../../../../../src/engine/core-modules/tool/tools/email-tool/constants/email-tool.constants.ts"],"sourcesContent":["export { MAX_EMAIL_RECIPIENTS } from 'twenty-shared/constants';\n"],"names":["MAX_EMAIL_RECIPIENTS"],"mappings":";;;;+BAASA;;;eAAAA,+BAAoB;;;2BAAQ"}

@@ -1,1 +1,0 @@
-{"version":3,"sources":["../../../../../../src/engine/core-modules/emailing-domain/drivers/types/emailing-domain-driver.type.ts"],"sourcesContent":["export enum EmailingDomainDriver {\n  AWS_SES = 'AWS_SES',\n}\n"],"names":["EmailingDomainDriver"],"mappings":";;;;+BAAYA;;;eAAAA;;;AAAL,IAAA,AAAKA,8CAAAA;;WAAAA"}

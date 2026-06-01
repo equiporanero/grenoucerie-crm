@@ -1,1 +1,0 @@
-{"version":3,"sources":["../../../../../../src/engine/metadata-modules/ai/ai-chat/jobs/stream-agent-chat-job-name.constant.ts"],"sourcesContent":["export const STREAM_AGENT_CHAT_JOB_NAME = 'StreamAgentChatJob';\n"],"names":["STREAM_AGENT_CHAT_JOB_NAME"],"mappings":";;;;+BAAaA;;;eAAAA;;;AAAN,MAAMA,6BAA6B"}

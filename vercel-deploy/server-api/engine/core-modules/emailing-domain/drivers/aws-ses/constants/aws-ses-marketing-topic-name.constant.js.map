@@ -1,1 +1,0 @@
-{"version":3,"sources":["../../../../../../../src/engine/core-modules/emailing-domain/drivers/aws-ses/constants/aws-ses-marketing-topic-name.constant.ts"],"sourcesContent":["export const AWS_SES_MARKETING_TOPIC_NAME = 'marketing';\n"],"names":["AWS_SES_MARKETING_TOPIC_NAME"],"mappings":";;;;+BAAaA;;;eAAAA;;;AAAN,MAAMA,+BAA+B"}

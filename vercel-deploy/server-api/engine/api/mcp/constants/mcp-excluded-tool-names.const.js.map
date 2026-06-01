@@ -1,1 +1,0 @@
-{"version":3,"sources":["../../../../../src/engine/api/mcp/constants/mcp-excluded-tool-names.const.ts"],"sourcesContent":["export const MCP_EXCLUDED_TOOL_NAMES = new Set([\n  'code_interpreter',\n  'http_request',\n]);\n"],"names":["MCP_EXCLUDED_TOOL_NAMES","Set"],"mappings":";;;;+BAAaA;;;eAAAA;;;AAAN,MAAMA,0BAA0B,IAAIC,IAAI;IAC7C;IACA;CACD"}
